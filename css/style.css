@@ -1,0 +1,276 @@
+/* ---------- Reset & base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1c1c1e;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+    margin: 0 0 0.6em;
+    color: #111;
+}
+
+h1 {
+    font-size: 2.4rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 1.6em;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 1.4em;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+main {
+    flex: 1;
+    padding: 2.5rem 0 4rem;
+}
+
+/* ---------- Header / nav ---------- */
+.site-header {
+    border-bottom: 1px solid #e5e5ea;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    padding: 0.9rem 0;
+}
+
+.nav-brand {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #111;
+    letter-spacing: -0.01em;
+}
+
+.nav-brand:hover {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #333;
+    font-weight: 500;
+    padding: 0.25rem 0;
+}
+
+.nav-links a.active {
+    color: #0066cc;
+}
+
+/* ---------- Hero (landing) ---------- */
+.hero {
+    text-align: center;
+    padding: 3rem 0 2rem;
+}
+
+.hero p.lead {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 38em;
+    margin: 0 auto 1.5rem;
+}
+
+.app-store-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.85rem 1.5rem;
+    background: #111;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.app-store-badge:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+/* ---------- Screenshots ---------- */
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.screenshot {
+    aspect-ratio: 9 / 16;
+    background: linear-gradient(135deg, #e5e5ea, #c7c7cc);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c6c70;
+    font-size: 0.9rem;
+}
+
+/* ---------- Generic content sections ---------- */
+.content h2:first-child {
+    margin-top: 0;
+}
+
+.content ul,
+.content ol {
+    padding-left: 1.5rem;
+    margin: 0 0 1em;
+}
+
+.content li {
+    margin-bottom: 0.35em;
+}
+
+.meta {
+    color: #6c6c70;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+/* ---------- FAQ ---------- */
+.faq details {
+    border-top: 1px solid #e5e5ea;
+    padding: 1rem 0;
+}
+
+.faq details:last-of-type {
+    border-bottom: 1px solid #e5e5ea;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #111;
+}
+
+.faq summary:hover {
+    color: #0066cc;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    border-top: 1px solid #e5e5ea;
+    background: #f7f7f8;
+    padding: 2rem 0 1.5rem;
+    font-size: 0.92rem;
+    color: #555;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-grid h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #6c6c70;
+    margin: 0 0 0.5em;
+}
+
+.footer-grid ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-grid li {
+    margin-bottom: 0.35em;
+}
+
+.footer-grid a {
+    color: #333;
+}
+
+.copyright {
+    border-top: 1px solid #e5e5ea;
+    padding-top: 1rem;
+    color: #6c6c70;
+    font-size: 0.85rem;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 2rem 0 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
