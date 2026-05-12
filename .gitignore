@@ -22,3 +22,13 @@ yarn-error.log*
 # Local environment
 .env
 .env.local
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/bundle/
