@@ -97,14 +97,19 @@ main {
 }
 
 .nav-brand {
-    font-weight: 700;
-    font-size: 1.15rem;
+    display: inline-flex;
+    align-items: center;
     color: #111;
-    letter-spacing: -0.01em;
 }
 
 .nav-brand:hover {
     text-decoration: none;
+}
+
+.nav-logo {
+    height: 36px;
+    width: auto;
+    display: block;
 }
 
 .nav-links {
@@ -129,12 +134,29 @@ main {
 /* ---------- Hero (landing) ---------- */
 .hero {
     text-align: center;
-    padding: 3rem 0 2rem;
+    padding: 3rem 1rem 2.5rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('/content/img/back01.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+.hero-title {
+    margin: 0 0 0.5em;
+}
+
+.hero-logo {
+    max-width: 360px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 .hero p.lead {
     font-size: 1.2rem;
-    color: #555;
+    color: #444;
     max-width: 38em;
     margin: 0 auto 1.5rem;
 }
@@ -173,7 +195,19 @@ main {
     font-size: 0.9rem;
 }
 
+/* ---------- About section card (landing) ---------- */
+.about-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+        url('/content/img/back02.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
 /* ---------- Generic content sections ---------- */
+.content h1:first-child,
 .content h2:first-child {
     margin-top: 0;
 }
@@ -208,6 +242,16 @@ main {
     cursor: pointer;
     font-weight: 600;
     color: #111;
+    list-style: none;
+    padding-left: 2rem;
+    background-image: url('/content/img/icon_question.png');
+    background-repeat: no-repeat;
+    background-position: 0 0.15em;
+    background-size: 1.3em 1.3em;
+}
+
+.faq summary::-webkit-details-marker {
+    display: none;
 }
 
 .faq summary:hover {
@@ -266,11 +310,15 @@ main {
     }
 
     .hero {
-        padding: 2rem 0 1rem;
+        padding: 2rem 1rem 1.5rem;
     }
 
     .nav {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .nav-logo {
+        height: 32px;
     }
 }

@@ -1,0 +1,14 @@
+<header class="site-header">
+    <div class="container nav">
+        <a class="nav-brand" href="/" aria-label="Word Nerd 3D home">
+            <img src="/content/img/logo-flat.png" alt="Word Nerd 3D" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/"{% if page.url == '/' %} class="active"{% endif %}>Home</a></li>
+            <li><a href="/privacy/"{% if page.url == '/privacy/' %} class="active"{% endif %}>Privacy</a></li>
+            <li><a href="/terms/"{% if page.url == '/terms/' %} class="active"{% endif %}>Terms</a></li>
+            <li><a href="/support/"{% if page.url == '/support/' %} class="active"{% endif %}>Support</a></li>
+            <li><a href="/press/"{% if page.url == '/press/' %} class="active"{% endif %}>Press</a></li>
+        </ul>
+    </div>
+</header>
