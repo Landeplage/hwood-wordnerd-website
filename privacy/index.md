@@ -1,7 +1,7 @@
 ---
 layout: markdown
 title: Privacy Policy — Wordnerd 3D
-description: Privacy policy for Wordnerd 3D by Hållingwood A/S.
+description: Privacy policy for Wordnerd 3D.
 ---
 
 # Privacy Policy
