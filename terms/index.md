@@ -22,7 +22,7 @@ These Terms incorporate our [Privacy Policy](https://wordnerd3d.com/privacy), wh
 > Norway  
 > Org. no.: 924754303
 >
-> Contact: <support@hallingwood.no>
+> Contact: <{{ site.support_email }}>
 
 ## 2. Your right to use the Service
 
@@ -113,7 +113,7 @@ The Service and all materials in it — including the game design, code, graphic
 
 You may not copy, modify, distribute, or create derivative works based on the Service, except as expressly permitted by these Terms or by applicable mandatory law.
 
-If you believe content in the Service infringes your intellectual property rights, contact us at <support@hallingwood.no> with details of the alleged infringement.
+If you believe content in the Service infringes your intellectual property rights, contact us at <{{ site.support_email }}> with details of the alleged infringement.
 
 ## 11. Disclaimers
 
@@ -155,4 +155,4 @@ If you continue using the Service after the changes take effect, you accept the 
 - **Severability.** If any part of these Terms is found unenforceable, the rest remains in effect.
 - **No waiver.** Our failure to enforce any right does not waive that right.
 - **Assignment.** You may not transfer your rights under these Terms. We may transfer ours, for example as part of a merger, acquisition, or sale of assets.
-- **Contact.** For questions about these Terms, contact us at <support@hallingwood.no>.
+- **Contact.** For questions about these Terms, contact us at <{{ site.support_email }}>.

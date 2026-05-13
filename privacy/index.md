@@ -20,7 +20,7 @@ We are the **data controller** for the processing described in this policy. We c
 > Norway  
 > Org. no.: 924754303
 
-For any question about this policy or your personal data, contact us at <privacy@hallingwood.no>. We may need to verify your identity before acting on a request.
+For any question about this policy or your personal data, contact us at <{{ site.privacy_email }}>. We may need to verify your identity before acting on a request.
 
 ## 2. What data we collect and why
 
