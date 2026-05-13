@@ -152,6 +152,13 @@ main > .hero:first-child {
   color: var(--text);
   font-weight: 500;
   padding: 0.25rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-links a i {
+  font-size: 1.15em;
 }
 
 .nav-links a:hover {
