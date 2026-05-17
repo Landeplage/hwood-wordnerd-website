@@ -88,11 +88,12 @@ To be explicit:
 
 We use the following service providers ("data processors") to operate the Game. Each is bound by a data processing agreement.
 
-| Provider        | Purpose                                                             | Location                |
-| --------------- | ------------------------------------------------------------------- | ----------------------- |
-| Linode (Akamai) | Server hosting                                                      | Germany (EEA)           |
-| Apple Inc.      | App distribution, in-app purchases, push notifications              | United States / Ireland |
-| Google LLC      | Android distribution (when launched), AdMob ads, push notifications | United States / Ireland |
+| Provider        | Purpose                                                | Location                |
+| --------------- | ------------------------------------------------------ | ----------------------- |
+| Linode (Akamai) | Server hosting                                         | Germany (EEA)           |
+| Apple Inc.      | App distribution, in-app purchases, push notifications | United States / Ireland |
+| Google LLC      | Android distribution, AdMob ads, push notifications    | United States / Ireland |
+| Lettermint      | E-mail distribution                                    | Europe                  |
 
 **International transfers:** Services provided by Apple and Google involve transfers to the United States. These transfers are made under the EU-US Data Privacy Framework and/or Standard Contractual Clauses approved by the European Commission.
 
@@ -107,10 +108,10 @@ We do not transfer your data to any other third parties except where required by
 | Server logs (technical) | Up to 30 days                                        |
 | IP addresses            | Truncated; not stored long-term in identifiable form |
 | Purchase receipts       | 5 years (Norwegian bookkeeping law)                  |
-| Push notification token | Until you disable notifications                      |
+| Push notification token | Until you delete your account                        |
 | Inactive accounts       | Accounts inactive for 3 years are deleted            |
 
-When you request deletion, we erase or anonymize your personal data within 30 days, except where we are legally required to keep specific records (such as purchase receipts).
+When you request deletion, we erase or anonymize your personal data immediately, except where we are legally required to keep specific records (such as purchase receipts).
 
 ## 6. Your rights
 

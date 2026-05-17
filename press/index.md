@@ -13,7 +13,7 @@ Media assets and information for journalists, content creators, and partners cov
 ## Fact sheet
 
 > **Title** • Wordnerd 3D  
-> **Developer** • Hållingwood A/S  
+> **Developer** • [Hållingwood A/S](https://www.hållingwood.no/)  
 > **Platforms** • iOS (iPhone and iPad), Android planned  
 > **Release date** • 2026  
 > **Price** • Free, with optional ad-free premium (price TBD)
