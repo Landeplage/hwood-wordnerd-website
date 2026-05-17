@@ -20,7 +20,7 @@ Media assets and information for journalists, content creators, and partners cov
 
 ## Description
 
-Wordnerd 3D is a mobile word game where players take turns placing their tiles on a 3-dimensional board. Words can be played in any direction, and highly skilled players can play as many as 12 words in a single turn!
+Wordnerd 3D is a mobile word game where players take turns placing their tiles on a 3-dimensional board. Words can be played in any direction, which leads to many possibilites for scoring points!
 
 The game is played with tiles, each of which holds a single letter and point value. Both players have a tile rack that holds 7 tiles that they can place on the board to form words. New words must be connected to at least one tile on the board. As tiles are played, players draw new random tiles from the tile bag - which holds 100 tiles at the start of each game.
 
