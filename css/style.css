@@ -183,7 +183,7 @@ main > .hero:first-child {
   content: "";
   position: absolute;
   inset: -20%;
-  background-image: url("/content/img/back01.png");
+  background-image: url("/content/img/hero_back.webp");
   background-size: cover;
   background-position: center;
   filter: brightness(25%) saturate(50%) saturate(300%) brightness(95%)

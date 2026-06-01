@@ -1,7 +1,13 @@
 title: Wordnerd 3D
-description: A word puzzle game by Hållingwood A/S.
+description: A word game by Hållingwood A/S.
 url: https://wordnerd3d.com
 
 support_email: wordnerdsupport@hållingwood.no
 press_email: wordnerdsupport@hållingwood.no
 privacy_email: wordnerdsupport@hållingwood.no
+app_store_url_ios: https://apps.apple.com/app/id6448034415
+
+exclude:
+  - README.md
+  - Dockerfile
+  - docker-compose.yml
