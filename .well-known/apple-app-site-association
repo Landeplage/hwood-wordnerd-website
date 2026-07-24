@@ -6,8 +6,9 @@
 				"appIDs": ["4UNU78F2DR.com.hallingwood.wordnerd"],
 				"appID": "4UNU78F2DR.com.hallingwood.wordnerd",
 				"components": [
-					{ "/": "/invite", "comment": "Invite landing page" },
-					{ "/": "/invite/*", "comment": "Invite links" }
+					{ "/": "/invite", "comment": "Invite path without trailing slash" },
+					{ "/": "/invite/", "comment": "Shared invite links: /invite/?u=name" },
+					{ "/": "/invite/*", "comment": "Any deeper invite path" }
 				],
 				"paths": ["/invite", "/invite/", "/invite/*"]
 			}
