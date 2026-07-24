@@ -1,0 +1,16 @@
+{
+	"applinks": {
+		"apps": [],
+		"details": [
+			{
+				"appIDs": ["4UNU78F2DR.com.hallingwood.wordnerd"],
+				"appID": "4UNU78F2DR.com.hallingwood.wordnerd",
+				"components": [
+					{ "/": "/invite", "comment": "Invite landing page" },
+					{ "/": "/invite/*", "comment": "Invite links" }
+				],
+				"paths": ["/invite", "/invite/", "/invite/*"]
+			}
+		]
+	}
+}

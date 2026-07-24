@@ -11,3 +11,8 @@ exclude:
   - README.md
   - Dockerfile
   - docker-compose.yml
+
+# Jekyll skips dot-directories by default; needed so the Apple universal-links
+# file (apple-app-site-association) is published for app invite deeplinks.
+include:
+  - .well-known

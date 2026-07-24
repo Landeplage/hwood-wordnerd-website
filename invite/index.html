@@ -1,0 +1,36 @@
+---
+layout: default
+title: You're invited — Wordnerd 3D
+description: You've been invited to play Wordnerd 3D — a word game in three dimensions.
+---
+
+<div class="container content">
+  <h1>Wordnerd&nbsp;3D</h1>
+  <p id="invite-line">You've been invited to play Wordnerd&nbsp;3D!</p>
+  <p>
+    A word game like no other — build words in three dimensions, in all six
+    directions, and outsmart your friends.
+  </p>
+  <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+    <img src="/content/img/app_store_badge.svg" alt="Download on the App Store" />
+  </a>
+  <p id="invite-hint" hidden>
+    Already have the app? Search for the username above to start a game.
+  </p>
+</div>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get("u"); // already percent-decoded by URLSearchParams
+    if (name && name.length > 0 && name.length <= 32) {
+      var line = document.getElementById("invite-line");
+      line.textContent = "";
+      var strong = document.createElement("strong");
+      strong.textContent = name;
+      line.appendChild(strong);
+      line.appendChild(document.createTextNode(" has invited you to play Wordnerd 3D!"));
+      document.getElementById("invite-hint").hidden = false;
+    }
+  })();
+</script>
