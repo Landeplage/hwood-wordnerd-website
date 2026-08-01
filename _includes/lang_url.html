@@ -1,0 +1,14 @@
+{%- comment -%}
+Turns a language-independent path into a path for the current language.
+
+    {% include lang_url.html path='/support/' %}   ->  /support/   (en)
+                                                  ->  /nb/support/ (nb)
+
+Reads `page.lang` directly rather than the `lang` variable from i18n.html, so
+it also works from a Markdown page body where i18n.html was never included.
+Pass `lang` explicitly to build a URL for a language other than the current one:
+
+    {% include lang_url.html path='/support/' lang=l %}
+{%- endcomment -%}
+{%- assign _l = include.lang | default: page.lang | default: site.default_lang -%}
+{%- if _l == site.default_lang -%}{{ include.path }}{%- else -%}/{{ _l }}{{ include.path }}{%- endif -%}

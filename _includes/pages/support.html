@@ -1,0 +1,25 @@
+{%- include i18n.html -%}
+{%- assign ts = t.support -%}
+{%- assign ts_en = t_en.support -%}
+
+<div class="container content">
+  <h1>{{ ts.heading | default: ts_en.heading }}</h1>
+  <p>
+    {%- capture email_link -%}<a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>{%- endcapture -%}
+    {{ ts.intro | default: ts_en.intro | replace: '[email]', email_link }}
+  </p>
+
+  <h2>{{ ts.faq_heading | default: ts_en.faq_heading }}</h2>
+  <div class="faq-cards">
+    {%- assign faq = ts.faq | default: ts_en.faq -%}
+    {%- for item in faq %}
+    <article class="faq-card">
+      <div class="faq-icon">
+        <i class="ti {{ item.icon }}" aria-hidden="true"></i>
+      </div>
+      <h3>{{ item.q }}</h3>
+      <p>{{ item.a }}</p>
+    </article>
+    {%- endfor %}
+  </div>
+</div>

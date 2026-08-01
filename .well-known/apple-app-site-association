@@ -8,9 +8,12 @@
 				"components": [
 					{ "/": "/invite", "comment": "Invite path without trailing slash" },
 					{ "/": "/invite/", "comment": "Shared invite links: /invite/?u=name" },
-					{ "/": "/invite/*", "comment": "Any deeper invite path" }
+					{ "/": "/invite/*", "comment": "Any deeper invite path" },
+					{ "/": "/*/invite", "comment": "Localized invite without trailing slash: /nb/invite" },
+					{ "/": "/*/invite/", "comment": "Localized invite links: /nb/invite/?u=name" },
+					{ "/": "/*/invite/*", "comment": "Any deeper localized invite path" }
 				],
-				"paths": ["/invite", "/invite/", "/invite/*"]
+				"paths": ["/invite", "/invite/", "/invite/*", "/*/invite", "/*/invite/", "/*/invite/*"]
 			}
 		]
 	}

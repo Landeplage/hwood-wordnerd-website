@@ -1,12 +1,14 @@
+{%- include i18n.html -%}
 <header class="site-header">
     <div class="container nav">
-        <a class="nav-brand" href="/" aria-label="Word Nerd 3D home">
-            <img src="/content/img/logo-flat.png" alt="Word Nerd 3D" class="nav-logo">
+        <a class="nav-brand" href="{% include lang_url.html path='/' %}" aria-label="{{ t.nav.brand_aria | default: t_en.nav.brand_aria }}">
+            <img src="/content/img/logo-flat.png" alt="{{ t.nav.brand_alt | default: t_en.nav.brand_alt }}" class="nav-logo">
         </a>
         <ul class="nav-links">
-            <li><a href="/"{% if page.url == '/' %} class="active"{% endif %}><i class="ti ti-home" aria-hidden="true"></i> Home</a></li>
-            <li><a href="/support/"{% if page.url == '/support/' %} class="active"{% endif %}><i class="ti ti-lifebuoy" aria-hidden="true"></i> Support</a></li>
-            <li><a href="/press/"{% if page.url == '/press/' %} class="active"{% endif %}><i class="ti ti-news" aria-hidden="true"></i> Press</a></li>
+            <li><a href="{% include lang_url.html path='/' %}"{% if ref == '/' %} class="active"{% endif %}><i class="ti ti-home" aria-hidden="true"></i> {{ t.nav.home | default: t_en.nav.home }}</a></li>
+            <li><a href="{% include lang_url.html path='/support/' %}"{% if ref == '/support/' %} class="active"{% endif %}><i class="ti ti-lifebuoy" aria-hidden="true"></i> {{ t.nav.support | default: t_en.nav.support }}</a></li>
+            <li><a href="{% include lang_url.html path='/press/' %}"{% if ref == '/press/' %} class="active"{% endif %}><i class="ti ti-news" aria-hidden="true"></i> {{ t.nav.press | default: t_en.nav.press }}</a></li>
+            <li class="nav-lang">{% include lang-switcher.html %}</li>
         </ul>
     </div>
 </header>

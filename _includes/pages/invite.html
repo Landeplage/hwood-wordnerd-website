@@ -1,0 +1,41 @@
+{%- include i18n.html -%}
+{%- assign ti = t.invite -%}
+{%- assign ti_en = t_en.invite -%}
+
+<div class="container content">
+  <h1>{{ ti.heading | default: ti_en.heading }}</h1>
+  <p id="invite-line">{{ ti.headline | default: ti_en.headline }}</p>
+  <p>
+    {{ ti.blurb | default: ti_en.blurb }}
+  </p>
+  <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
+  </a>
+  <p id="invite-hint" hidden>
+    {{ ti.hint | default: ti_en.hint }}
+  </p>
+</div>
+
+{%- capture headline_from -%}{{ ti.headline_from | default: ti_en.headline_from }}{%- endcapture -%}
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get("u"); // already percent-decoded by URLSearchParams
+    if (!name || name.length === 0 || name.length > 32) return;
+
+    // The template carries [name] so locales can place the username anywhere
+    // in the sentence, not just at the front.
+    var parts = {{ headline_from | jsonify }}.split("[name]");
+    var line = document.getElementById("invite-line");
+    line.textContent = "";
+    for (var i = 0; i < parts.length; i++) {
+      if (i > 0) {
+        var strong = document.createElement("strong");
+        strong.textContent = name;
+        line.appendChild(strong);
+      }
+      line.appendChild(document.createTextNode(parts[i]));
+    }
+    document.getElementById("invite-hint").hidden = false;
+  })();
+</script>

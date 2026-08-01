@@ -155,6 +155,6 @@ You can remove ads entirely by purchasing Wordnerd Premium.
 
 ## 10. Changes to this policy
 
-We may update this policy when our service or applicable law changes. The current version will always be available [here](https://www.wordnerd3d.com/privacy). The "Last updated" date at the top shows when the policy was last revised.
+We may update this policy when our service or applicable law changes. The current version will always be available [here]({% include lang_url.html path='/privacy/' %}). The "Last updated" date at the top shows when the policy was last revised.
 
 ---

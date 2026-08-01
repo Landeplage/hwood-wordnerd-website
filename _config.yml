@@ -1,5 +1,3 @@
-title: Wordnerd 3D
-description: A word game by Hållingwood A/S.
 url: https://wordnerd3d.com
 
 support_email: wordnerdsupport@hållingwood.no
@@ -7,10 +5,33 @@ press_email: wordnerdsupport@hållingwood.no
 privacy_email: wordnerdsupport@hållingwood.no
 app_store_url_ios: https://apps.apple.com/app/id6755068519
 
+# Localization. Codes are ISO 639-1 (Norwegian Bokmål is "nb", not "no").
+# The default language is served unprefixed at the site root; every other
+# language lives under /<code>/. Display strings live in _data/i18n/<code>.yml.
+# See README.md for the "adding a language" checklist.
+default_lang: en
+languages:
+  - en
+  - nb
+
+# Give every page a `lang` without per-file front matter. Later scopes win in
+# Jekyll, so files under nb/ get "nb" and everything else falls back to "en".
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "nb"
+    values:
+      lang: nb
+
 exclude:
   - README.md
   - Dockerfile
   - docker-compose.yml
+  - _site_before
+  - _site_after
 
 # Jekyll skips dot-directories by default; needed so the Apple universal-links
 # file (apple-app-site-association) is published for app invite deeplinks.

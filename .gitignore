@@ -25,6 +25,8 @@ yarn-error.log*
 
 # Jekyll
 _site/
+_site_before/
+_site_after/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/

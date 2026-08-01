@@ -1,0 +1,21 @@
+{%- comment -%}
+Language links for the current page. Plain anchors, so they work without JS;
+the script only records the choice so lang-detect.html stops guessing.
+Only lists languages the page actually exists in, so a page that sets
+`translated: [en]` never offers a link to a URL that would 404.
+
+Requires `lang`, `t` and `ref` in scope — include i18n.html first.
+{%- endcomment -%}
+{%- assign switch_langs = page.translated | default: site.languages -%}
+<nav class="lang-switcher" aria-label="{{ t.nav.lang_aria | default: t_en.nav.lang_aria }}">
+  {%- for l in switch_langs %}
+  <a href="{% include lang_url.html path=ref lang=l %}" hreflang="{{ l }}" data-set-lang="{{ l }}"{% if l == lang %} class="active" aria-current="true"{% endif %}>{{ t.lang_names[l] | default: t_en.lang_names[l] }}</a>
+  {%- endfor %}
+</nav>
+<script>
+  document.querySelectorAll("[data-set-lang]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      try { localStorage.setItem("wn_lang", link.getAttribute("data-set-lang")); } catch (e) {}
+    });
+  });
+</script>

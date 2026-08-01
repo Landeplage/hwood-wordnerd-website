@@ -1,0 +1,38 @@
+{%- comment -%}
+Sets up the translation context for the current page. Include this once at the
+top of any layout or page body that needs strings:
+
+    {% include i18n.html %}
+
+Liquid includes share the caller's scope, so a single include in
+_layouts/default.html covers nav/footer/head-meta. Page bodies render *before*
+layouts, so each _includes/pages/*.html needs its own include.
+
+Defines:
+  lang    the current language code, e.g. "nb"
+  t       the string table for that language
+  t_en    the default-language table, for per-key fallback:
+            {{ t.nav.support | default: t_en.nav.support }}
+  prefix  "" for the default language, "/nb" otherwise
+  ref     the language-independent path: /nb/support/ -> /support/. Drives the
+          nav active state, the language switcher and the hreflang alternates.
+  tkey    which block of the string table holds this page's copy, derived from
+          ref: / -> home, /support/ -> support. Pages whose copy lives in front
+          matter instead (the long-form Markdown) simply have no matching block.
+
+Both ref and tkey are derived so the page shells stay free of metadata that can
+drift out of sync; front matter still wins if a page needs to override either.
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.default_lang -%}
+{%- assign t = site.data.i18n[lang] | default: site.data.i18n[site.default_lang] -%}
+{%- assign t_en = site.data.i18n[site.default_lang] -%}
+{%- if lang == site.default_lang -%}
+  {%- assign prefix = '' -%}
+  {%- assign ref = page.url -%}
+{%- else -%}
+  {%- assign prefix = '/' | append: lang -%}
+  {%- assign ref = page.url | remove_first: prefix -%}
+{%- endif -%}
+{%- assign ref = page.ref | default: ref -%}
+{%- assign tkey = page.tkey | default: ref | replace: '/', '' -%}
+{%- if tkey == '' -%}{%- assign tkey = 'home' -%}{%- endif -%}

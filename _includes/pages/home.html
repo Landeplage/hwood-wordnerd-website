@@ -1,0 +1,65 @@
+{%- include i18n.html -%}
+{%- assign th = t.home -%}
+{%- assign th_en = t_en.home -%}
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <h1 class="hero-title">{{ th.hero_title | default: th_en.hero_title }}</h1>
+      <p class="lead">
+        {{ th.hero_lead | default: th_en.hero_lead }}
+      </p>
+      <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
+      </a>
+    </div>
+
+    <div class="hero-art">
+      <img src="/content/img/hero_phone.png" alt="{{ th.hero_phone_alt | default: th_en.hero_phone_alt }}" class="hero-phone" />
+    </div>
+  </div>
+</section>
+
+<section class="section section--centered">
+  <div class="container">
+    <span class="eyebrow">{{ th.features_eyebrow | default: th_en.features_eyebrow }}</span>
+    <h2 class="section-title">{{ th.features_title | default: th_en.features_title }}</h2>
+
+    <div class="feature-cards">
+      {%- assign features = th.features | default: th_en.features -%}
+      {%- for feature in features %}
+      <article class="feature-card">
+        <div class="feature-icon feature-icon--{{ feature.color }}">
+          <i class="ti {{ feature.icon }}" aria-hidden="true"></i>
+        </div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.body }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--centered">
+  <div class="container">
+    <span class="eyebrow">{{ th.screenshots_eyebrow | default: th_en.screenshots_eyebrow }}</span>
+    <h2 class="section-title">{{ th.screenshots_title | default: th_en.screenshots_title }}</h2>
+
+    <div class="screenshots">
+      <img src="{{ t.images.screenshot01 | default: t_en.images.screenshot01 }}" alt="{{ t.images.screenshot01_alt | default: t_en.images.screenshot01_alt }}" class="screenshot" />
+      <img src="{{ t.images.screenshot02 | default: t_en.images.screenshot02 }}" alt="{{ t.images.screenshot02_alt | default: t_en.images.screenshot02_alt }}" class="screenshot" />
+      <img src="{{ t.images.screenshot03 | default: t_en.images.screenshot03 }}" alt="{{ t.images.screenshot03_alt | default: t_en.images.screenshot03_alt }}" class="screenshot" />
+    </div>
+  </div>
+</section>
+
+<section class="section section--centered about-norway">
+  <div class="container">
+    <span class="eyebrow">{{ th.about_eyebrow | default: th_en.about_eyebrow }}</span>
+    <h2 class="section-title">{{ th.about_title | default: th_en.about_title }}</h2>
+    <p>
+      {%- capture studio_link -%}<a href="https://www.hållingwood.no/" target="_blank" rel="noopener noreferrer">{{ th.about_studio_name | default: th_en.about_studio_name }}</a>{%- endcapture -%}
+      {{ th.about_body | default: th_en.about_body | replace: '[studio]', studio_link }}
+    </p>
+  </div>
+</section>

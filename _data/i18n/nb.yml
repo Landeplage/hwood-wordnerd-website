@@ -1,0 +1,108 @@
+# Norwegian Bokmål (nb) display strings. Mirrors _data/i18n/en.yml.
+#
+# Any key omitted here falls back to the English value at render time, so it is
+# safe to leave a key out until it has been translated — but never write "" to
+# mean "blank", since the Liquid `default` filter treats that as missing.
+
+meta:
+  html_lang: nb
+  og_locale: nb_NO
+  site_title: Wordnerd 3D
+  site_description: Et ordspill fra Hållingwood A/S.
+
+lang_names:
+  en: English
+  nb: Norsk
+
+# Only artwork that actually exists in content/img/nb/ is listed here. Keys left
+# out fall back to the English asset, so add each one — together with its *_alt
+# text — as the file lands. Still missing: og-image.png, screenshot01-03.png.
+images:
+  app_store_badge: /content/img/nb/app_store_badge.svg
+  app_store_badge_alt: Last ned fra App Store
+
+nav:
+  brand_aria: Wordnerd 3D hjem
+  brand_alt: Wordnerd 3D
+  home: Hjem
+  support: Brukerstøtte
+  press: Presse
+  lang_aria: Språk
+
+footer:
+  site_heading: Wordnerd 3D
+  home: Hjem
+  press_kit: Pressemateriell
+  legal_heading: Juridisk
+  privacy: Personvernerklæring
+  terms: Brukervilkår
+  help_heading: Hjelp
+  support: Brukerstøtte og FAQ
+  copyright: "&copy; 2026 Hållingwood A/S. Alle rettigheter forbeholdt."
+
+home:
+  title: Wordnerd 3D – Ordspillet med dybde
+  description: Wordnerd 3D — et ordspill fra Hållingwood A/S. Tilgjengelig i App Store.
+  hero_title: Wordnerd 3D
+  hero_lead: Ordspillet der du legger ord i tre dimensjoner. Spill med venner og familie!
+  hero_phone_alt: Wordnerd 3D på en mobil
+
+  features_eyebrow: Slik spilles det
+  features_title: Et velkjent spill med en ny dimensjon
+  features:
+    - icon: ti-3d-cube-sphere
+      color: red
+      title: Alle retninger
+      body: Legg ord vannrett, loddrett og innover i dybden av brettet.
+    - icon: ti-star
+      color: orange
+      title: Score massevis av poeng
+      body: Bruk bonusbrikker og smarte plasseringer for å maksimere poengsummen din.
+    - icon: ti-clock
+      color: green
+      title: Ta deg god tid
+      body: Turbaserte partier du kan spille på et minutt, eller strekke over flere dager.
+
+  screenshots_eyebrow: Skjermbilder
+  screenshots_title: Se det i aksjon
+
+  about_eyebrow: Om
+  about_title: Laget i Norge
+  # [studio] erstattes med en lenke til nettsiden til Hållingwood.
+  about_body: Wordnerd 3D er laget av [studio], et lite studio som ville finne ut hva som skjer om du tar en klassisk ordspillmekanikk og legger til en tredje dimensjon. Svaret er mye moro!
+  about_studio_name: Hållingwood
+
+support:
+  title: Brukerstøtte — Wordnerd 3D
+  description: Brukerstøtte og ofte stilte spørsmål om Wordnerd 3D.
+  heading: Brukerstøtte
+  # [email] erstattes med en mailto-lenke til site.support_email.
+  intro: Trenger du hjelp med Wordnerd 3D? Ta kontakt med oss på [email], så svarer vi så raskt vi kan.
+  faq_heading: Ofte stilte spørsmål
+  faq:
+    - icon: ti-device-mobile
+      q: Hvilke enheter støtter Wordnerd 3D?
+      a: iOS-enheter (iPhone og iPad) med iOS 16 eller nyere. Støtte for Android er planlagt i en senere oppdatering.
+    - icon: ti-restore
+      q: Hvordan gjenoppretter jeg kjøpene mine?
+      a: Gå til innstillingene i appen og trykk «Gjenopprett kjøp». Pass på at du er logget inn med samme konto som ble brukt til det opprinnelige kjøpet.
+    - icon: ti-bug
+      q: Jeg har funnet en feil — hvordan melder jeg fra?
+      a: Send en feilrapport til støtteadressen over med en detaljert beskrivelse av problemet, hvordan feilen kan gjenskapes, og eventuelle skjermbilder eller opplysninger om enheten.
+    - icon: ti-book
+      q: Ordlisten mangler et ord!
+      a: Send en e-post til støtteadressen over med ordet du mener mangler, så vurderer vi det for en senere oppdatering.
+    - icon: ti-trash
+      q: Hvordan sletter jeg kontoen eller dataene mine?
+      a: Gå til innstillingene i appen og trykk «Slett konto». Merk at handlingen ikke kan angres, og at alle dataene dine slettes permanent.
+
+invite:
+  title: Du er invitert — Wordnerd 3D
+  description: Du er invitert til å spille Wordnerd 3D — et ordspill i tre dimensjoner.
+  heading: Wordnerd 3D
+  headline: Du er invitert til å spille Wordnerd 3D!
+  # [name] erstattes med brukernavnet til den som inviterer, fra ?u=-parameteren.
+  # Behold plassholderen — språk som trenger navnet midt i setningen er avhengig av den.
+  headline_from: "[name] har invitert deg til å spille Wordnerd 3D!"
+  blurb: Et ordspill ulikt alle andre — bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine.
+  hint: Har du allerede appen? Søk opp brukernavnet over for å starte et parti.

@@ -1,0 +1,117 @@
+# English (en) display strings.
+#
+# Every other _data/i18n/<code>.yml mirrors this shape. Missing keys fall back
+# to this file at render time, so a partial translation degrades to English
+# rather than to a blank page.
+#
+# Caution: the Liquid `default` filter treats an empty string as missing, so
+# never use "" here to mean "intentionally blank" — use a real value.
+
+meta:
+  html_lang: en
+  og_locale: en_US
+  site_title: Wordnerd 3D
+  site_description: A word game by Hållingwood A/S.
+
+lang_names:
+  en: English
+  nb: Norsk
+
+# Locale-specific artwork. Locale-neutral art (logos, hero, favicons) is
+# referenced directly in the markup and lives at /content/img/ instead.
+images:
+  app_store_badge: /content/img/en/app_store_badge.svg
+  app_store_badge_alt: Download on the App Store
+  og_image: /content/img/en/og-image.png
+  screenshot01: /content/img/en/screenshot01.png
+  screenshot02: /content/img/en/screenshot02.png
+  screenshot03: /content/img/en/screenshot03.png
+  screenshot01_alt: Wordnerd 3D screenshot 1
+  screenshot02_alt: Wordnerd 3D screenshot 2
+  screenshot03_alt: Wordnerd 3D screenshot 3
+
+nav:
+  brand_aria: Wordnerd 3D home
+  brand_alt: Wordnerd 3D
+  home: Home
+  support: Support
+  press: Press
+  lang_aria: Language
+
+footer:
+  site_heading: Wordnerd 3D
+  home: Home
+  press_kit: Press kit
+  legal_heading: Legal
+  privacy: Privacy policy
+  terms: Terms of service
+  help_heading: Help
+  support: Support &amp; FAQ
+  copyright: "&copy; 2026 Hållingwood A/S. All rights reserved."
+
+home:
+  title: Wordnerd 3D - A word game for nerds
+  description: Wordnerd 3D — a word puzzle game by Hållingwood A/S. Available on the App Store.
+  hero_title: Wordnerd 3D
+  hero_lead: The word game where you build words in three dimensions. Stack, spell and score with friends!
+  hero_phone_alt: Wordnerd 3D on a phone
+
+  features_eyebrow: How it plays
+  features_title: A familiar game with a new dimension
+  features:
+    - icon: ti-3d-cube-sphere
+      color: red
+      title: Any direction
+      body: Play words horizontally, vertically, and into the depth of the board.
+    - icon: ti-star
+      color: orange
+      title: Score huge points
+      body: Use bonus tiles and strategic placements to maximize your score.
+    - icon: ti-clock
+      color: green
+      title: Take your time
+      body: Turn-based matches you can play in a minute, or stretch over days.
+
+  screenshots_eyebrow: Screenshots
+  screenshots_title: See it in action
+
+  about_eyebrow: About
+  about_title: Made in Norway
+  # [studio] is replaced with a link to the Hållingwood website.
+  about_body: Wordnerd 3D is built by [studio], a small studio that wanted to find out what would happen if you took a classic word game mechanic and added a third dimension. Turns out; a lot of fun!
+  about_studio_name: Hållingwood
+
+support:
+  title: Support — Wordnerd 3D
+  description: Support and FAQ for Wordnerd 3D.
+  heading: Support
+  # [email] is replaced with a mailto: link to site.support_email.
+  intro: Need help with Wordnerd 3D? Reach out to us at [email] and we'll get back to you as soon as we can.
+  faq_heading: Frequently asked questions
+  faq:
+    - icon: ti-device-mobile
+      q: Which devices does Wordnerd 3D support?
+      a: iOS devices (iPhone and iPad) running iOS 16 or later. Android support is planned for a future update.
+    - icon: ti-restore
+      q: How do I restore my purchases?
+      a: Go to the settings menu in the app and tap "Restore Purchases." Make sure you are signed in with the same account used to make the original purchase.
+    - icon: ti-bug
+      q: I found a bug — how do I report it?
+      a: Please send a bug report to the support email above with a detailed description of the issue, steps to reproduce it, and any relevant screenshots or device information.
+    - icon: ti-book
+      q: The wordlist is missing a word!
+      a: Please send an email to the support address above with the word you believe is missing, and we will review it for inclusion in a future update.
+    - icon: ti-trash
+      q: How do I delete my account or data?
+      a: Go to the settings menu in the app and tap "Delete account." Please note that this action is irreversible and will permanently delete all your data.
+
+invite:
+  title: You're invited — Wordnerd 3D
+  description: You've been invited to play Wordnerd 3D — a word game in three dimensions.
+  heading: Wordnerd 3D
+  headline: You've been invited to play Wordnerd 3D!
+  # [name] is replaced with the inviter's username from the ?u= query parameter.
+  # Keep the placeholder — locales that need the name mid-sentence depend on it.
+  headline_from: "[name] has invited you to play Wordnerd 3D!"
+  blurb: A word game like no other — build words in three dimensions, in all six directions, and outsmart your friends.
+  hint: Already have the app? Search for the username above to start a game.

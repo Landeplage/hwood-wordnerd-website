@@ -1,7 +1,7 @@
 ---
 layout: markdown
-title: Privacy Policy — Wordnerd 3D
-description: Privacy policy for Wordnerd 3D by Hållingwood A/S.
+title: Terms of Service — Wordnerd 3D
+description: Terms of service for Wordnerd 3D by Hållingwood A/S.
 ---
 
 # Terms of Service
@@ -12,7 +12,7 @@ These Terms of Service ("Terms") are a legal agreement between **Hållingwood A/
 
 By downloading, installing, or using the Service, you agree to these Terms. If you do not agree, do not use the Service.
 
-These Terms incorporate our [Privacy Policy](https://wordnerd3d.com/privacy), which explains how we handle your personal data.
+These Terms incorporate our [Privacy Policy]({% include lang_url.html path='/privacy/' %}), which explains how we handle your personal data.
 
 ## 1. Who we are and how to contact us
 
@@ -145,7 +145,7 @@ EU and EEA consumers can find information about out-of-court dispute resolution 
 
 ## 15. Changes to these Terms
 
-We may update these Terms from time to time. The current version will always be available [here](https://wordnerd3d.com/terms).
+We may update these Terms from time to time. The current version will always be available [here]({% include lang_url.html path='/terms/' %}).
 
 If you continue using the Service after the changes take effect, you accept the updated Terms. If you do not accept them, you may stop using the Service and delete your account.
 

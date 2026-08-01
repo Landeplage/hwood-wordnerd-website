@@ -170,6 +170,35 @@ main > .hero:first-child {
   color: var(--accent);
 }
 
+/* Language switcher: quieter than the nav links, and separated from them so it
+   doesn't read as another destination. */
+.nav-lang {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  border-left: 1px solid var(--border);
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.nav-links .lang-switcher a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-links .lang-switcher a:hover {
+  color: var(--accent-hover);
+}
+
+.nav-links .lang-switcher a.active {
+  color: var(--text);
+}
+
 /* ---------- Hero (landing) ---------- */
 .hero {
   position: relative;
@@ -579,6 +608,17 @@ main > .hero:first-child {
 
   .nav-logo {
     height: 26px;
+  }
+
+  /* The nav wraps at this width, so the divider before the language switcher
+     would land at the start of a new line. Drop it and tighten the gap. */
+  .nav-lang {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .nav-links {
+    gap: 0.25rem 0.9rem;
   }
 
   .section {

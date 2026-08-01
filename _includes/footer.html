@@ -1,27 +1,28 @@
+{%- include i18n.html -%}
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h3>Wordnerd 3D</h3>
+        <h3>{{ t.footer.site_heading | default: t_en.footer.site_heading }}</h3>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/press/">Press kit</a></li>
+          <li><a href="{% include lang_url.html path='/' %}">{{ t.footer.home | default: t_en.footer.home }}</a></li>
+          <li><a href="{% include lang_url.html path='/press/' %}">{{ t.footer.press_kit | default: t_en.footer.press_kit }}</a></li>
         </ul>
       </div>
       <div>
-        <h3>Legal</h3>
+        <h3>{{ t.footer.legal_heading | default: t_en.footer.legal_heading }}</h3>
         <ul>
-          <li><a href="/privacy/">Privacy policy</a></li>
-          <li><a href="/terms/">Terms of service</a></li>
+          <li><a href="{% include lang_url.html path='/privacy/' %}">{{ t.footer.privacy | default: t_en.footer.privacy }}</a></li>
+          <li><a href="{% include lang_url.html path='/terms/' %}">{{ t.footer.terms | default: t_en.footer.terms }}</a></li>
         </ul>
       </div>
       <div>
-        <h3>Help</h3>
+        <h3>{{ t.footer.help_heading | default: t_en.footer.help_heading }}</h3>
         <ul>
-          <li><a href="/support/">Support &amp; FAQ</a></li>
+          <li><a href="{% include lang_url.html path='/support/' %}">{{ t.footer.support | default: t_en.footer.support }}</a></li>
         </ul>
       </div>
     </div>
-    <p class="copyright">&copy; 2026 Hållingwood A/S. All rights reserved.</p>
+    <p class="copyright">{{ t.footer.copyright | default: t_en.footer.copyright }}</p>
   </div>
 </footer>
