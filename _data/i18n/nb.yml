@@ -67,7 +67,7 @@ home:
     - icon: ti-clock
       color: green
       title: Ta deg god tid
-      body: Turbaserte partier du kan spille på et minutt, eller strekke over flere dager.
+      body: Turbaserte partier du kan spille på fem minutter, eller strekke over flere dager.
 
   screenshots_eyebrow: Skjermbilder
   screenshots_title: Se det i aksjon
