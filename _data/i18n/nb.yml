@@ -47,7 +47,7 @@ footer:
   copyright: "&copy; 2026 Hållingwood A/S. Alle rettigheter forbeholdt."
 
 home:
-  title: Wordnerd 3D – Ordspillet med dybde
+  title: Wordnerd 3D | Ordspillet med dybde
   description: Wordnerd 3D — et ordspill fra Hållingwood A/S. Tilgjengelig i App Store.
   hero_title: Wordnerd 3D
   hero_lead: Ordspillet der du legger ord i tre dimensjoner. Spill med venner og familie!
@@ -79,7 +79,7 @@ home:
   about_studio_name: Hållingwood
 
 support:
-  title: Brukerstøtte — Wordnerd 3D
+  title: Brukerstøtte | Wordnerd 3D
   description: Brukerstøtte og ofte stilte spørsmål om Wordnerd 3D.
   heading: Brukerstøtte
   # [email] erstattes med en mailto-lenke til site.support_email.
@@ -103,7 +103,7 @@ support:
       a: Gå til innstillingene i appen og trykk «Slett konto». Merk at handlingen ikke kan angres, og at alle dataene dine slettes permanent.
 
 invite:
-  title: Du er invitert — Wordnerd 3D
+  title: Du er invitert | Wordnerd 3D
   description: Du er invitert til å spille Wordnerd 3D — et ordspill i tre dimensjoner.
   heading: Wordnerd 3D
   headline: Du er invitert til å spille Wordnerd 3D!

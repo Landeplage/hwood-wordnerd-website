@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Terms of Service — Wordnerd 3D
+title: Terms of Service | Wordnerd 3D
 description: Terms of service for Wordnerd 3D by Hållingwood A/S.
 ---
 

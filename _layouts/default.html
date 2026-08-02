@@ -12,7 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+{%- comment -%}
+    Version the stylesheet on its own mtime, so a deploy invalidates the
+    browser cache only when the CSS actually changed.
+{%- endcomment -%}
+{%- assign css_file = site.static_files | where: "path", "/css/style.css" | first -%}
+{%- assign css_ver = css_file.modified_time | default: site.time | date: "%s" %}
+    <link rel="stylesheet" href="/css/style.css?v={{ css_ver }}">
     <link rel="icon" type="image/png" sizes="32x32" href="/content/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/content/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/content/favicon/apple-touch-icon.png">

@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Brukervilkår — Wordnerd 3D
+title: Brukervilkår | Wordnerd 3D
 description: Brukervilkår for Wordnerd 3D fra Hållingwood A/S.
 ---
 

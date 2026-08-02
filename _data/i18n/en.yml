@@ -50,7 +50,7 @@ footer:
   copyright: "&copy; 2026 Hållingwood A/S. All rights reserved."
 
 home:
-  title: Wordnerd 3D - The word game with depth
+  title: Wordnerd 3D | The word game with depth
   description: Wordnerd 3D — a word puzzle game by Hållingwood A/S. Available on the App Store.
   hero_title: Wordnerd 3D
   hero_lead: The word game where you build words in three dimensions. Stack, spell and score with friends!
@@ -82,7 +82,7 @@ home:
   about_studio_name: Hållingwood
 
 support:
-  title: Support — Wordnerd 3D
+  title: Support | Wordnerd 3D
   description: Support and FAQ for Wordnerd 3D.
   heading: Support
   # [email] is replaced with a mailto: link to site.support_email.
@@ -106,7 +106,7 @@ support:
       a: Go to the settings menu in the app and tap "Delete account." Please note that this action is irreversible and will permanently delete all your data.
 
 invite:
-  title: You're invited — Wordnerd 3D
+  title: You're invited | Wordnerd 3D
   description: You've been invited to play Wordnerd 3D — a word game in three dimensions.
   heading: Wordnerd 3D
   headline: You've been invited to play Wordnerd 3D!

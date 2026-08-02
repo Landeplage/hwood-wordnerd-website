@@ -512,6 +512,95 @@ main > .hero:first-child {
   color: var(--accent);
 }
 
+/* ---------- Press kit ---------- */
+/* Banner under the page intro. The key art is 1600 × 840, cropped to a wider
+   ratio here so it reads as a header rather than dominating the page. */
+.press-hero {
+  width: 100%;
+  aspect-ratio: 2.4 / 1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin: 2rem 0 2.5rem;
+}
+
+/* ---------- Press kit assets ---------- */
+.press-download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.press-download strong {
+  color: var(--heading);
+  font-size: 1.05rem;
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* Cards size to their own image, rather than stretching to the tallest
+     card in the row. */
+  align-items: start;
+  gap: 1.25rem;
+  margin: 1.25rem 0 2.5rem;
+}
+
+/* Phone screenshots are tall, so they get a narrower track. */
+.asset-grid--shots {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.asset-grid--art {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.asset-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.asset-card:hover {
+  border-color: var(--accent);
+}
+
+.asset-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Logos are transparent PNGs, so they need a backdrop with some padding. */
+.asset-card--logo img {
+  padding: 1.25rem;
+  background: var(--surface-overlay);
+}
+
+.asset-caption {
+  padding: 0.75rem 1rem 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+.asset-caption span {
+  display: block;
+  color: var(--heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
@@ -596,6 +685,11 @@ main > .hero:first-child {
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
+  }
+
+  /* A 2.4:1 crop is only a sliver at phone widths. */
+  .press-hero {
+    aspect-ratio: 1.8 / 1;
   }
 
   .hero {

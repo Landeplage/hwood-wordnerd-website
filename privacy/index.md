@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Privacy Policy — Wordnerd 3D
+title: Privacy Policy | Wordnerd 3D
 description: Privacy policy for Wordnerd 3D.
 ---
 

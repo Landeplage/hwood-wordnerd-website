@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Personvernerklæring — Wordnerd 3D
+title: Personvernerklæring | Wordnerd 3D
 description: Personvernerklæring for Wordnerd 3D.
 ---
 

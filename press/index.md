@@ -1,6 +1,6 @@
 ---
 layout: markdown
-title: Press — Wordnerd 3D
+title: Press | Wordnerd 3D
 description: Press kit and media resources for Wordnerd 3D.
 ---
 
@@ -8,7 +8,7 @@ description: Press kit and media resources for Wordnerd 3D.
 
 Media assets and information for journalists, content creators, and partners covering Wordnerd 3D.
 
----
+<img class="press-hero" src="/content/press/key_art_01.png" alt="Wordnerd 3D key art" width="1600" height="840">
 
 ## Fact sheet
 
@@ -16,7 +16,7 @@ Media assets and information for journalists, content creators, and partners cov
 > **Developer** • [Hållingwood A/S](https://www.hållingwood.no/)  
 > **Platforms** • iOS (iPhone and iPad), Android planned  
 > **Release date** • 2026  
-> **Price** • Free, with optional ad-free premium (price TBD)
+> **Price** • Free, with optional ad-free premium
 
 ## Description
 
@@ -41,11 +41,71 @@ The game ends when the tile bag is empty and a player has played their last tile
 
 ## Assets
 
-Logos, screenshots, and key art will be made available here as downloadable archives.
+<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 11.5 MB)</a></strong></p>
 
-- Logos — <em>coming soon</em>
-- Screenshots — <em>coming soon</em>
-- Key art — <em>coming soon</em>
+### Logos
+
+<div class="asset-grid asset-grid--logos">
+  <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
+    <img src="/content/img/logo-3d.png" alt="Wordnerd 3D logo, 3D version" width="949" height="517" loading="lazy">
+    <span class="asset-caption"><span>Logo — 3D</span>PNG · 949 × 517 px</span>
+  </a>
+  <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
+    <img src="/content/img/logo-flat.png" alt="Wordnerd 3D logo, flat version" width="992" height="392" loading="lazy">
+    <span class="asset-caption"><span>Logo — flat</span>PNG · 992 × 392 px</span>
+  </a>
+</div>
+
+### Key art
+
+<div class="asset-grid asset-grid--art">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/press/key_art_01.png">
+    <img src="/content/press/key_art_01.png" alt="Wordnerd 3D key art, landscape" width="1600" height="840" loading="lazy">
+    <span class="asset-caption"><span>Key art — landscape</span>PNG · 1600 × 840 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/press/key_art_02.png">
+    <img src="/content/press/key_art_02.png" alt="Wordnerd 3D key art, portrait" width="900" height="1200" loading="lazy">
+    <span class="asset-caption"><span>Key art — portrait</span>PNG · 900 × 1200 px</span>
+  </a>
+</div>
+
+### Screenshots — English
+
+Captured on iPhone.
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_01.png">
+    <img src="/content/img/en/screenshot_01.png" alt="Wordnerd 3D screenshot 1, English" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>English</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_02.png">
+    <img src="/content/img/en/screenshot_02.png" alt="Wordnerd 3D screenshot 2, English" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>English</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_03.png">
+    <img src="/content/img/en/screenshot_03.png" alt="Wordnerd 3D screenshot 3, English" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>English</span>
+  </a>
+</div>
+
+### Screenshots — Norwegian
+
+Captured on iPhone.
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_01.png">
+    <img src="/content/img/nb/screenshot_01.png" alt="Wordnerd 3D screenshot 1, Norwegian" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>Norwegian</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_02.png">
+    <img src="/content/img/nb/screenshot_02.png" alt="Wordnerd 3D screenshot 2, Norwegian" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>Norwegian</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_03.png">
+    <img src="/content/img/nb/screenshot_03.png" alt="Wordnerd 3D screenshot 3, Norwegian" width="1206" height="2622" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>Norwegian</span>
+  </a>
+</div>
 
 ## Press contact
 
