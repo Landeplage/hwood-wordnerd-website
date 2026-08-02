@@ -23,12 +23,12 @@ images:
   app_store_badge: /content/img/en/app_store_badge.svg
   app_store_badge_alt: Download on the App Store
   og_image: /content/img/en/og-image.png
-  screenshot01: /content/img/en/screenshot01.png
-  screenshot02: /content/img/en/screenshot02.png
-  screenshot03: /content/img/en/screenshot03.png
-  screenshot01_alt: Wordnerd 3D screenshot 1
-  screenshot02_alt: Wordnerd 3D screenshot 2
-  screenshot03_alt: Wordnerd 3D screenshot 3
+  screenshot01: /content/img/en/screenshot_01.png
+  screenshot01_alt: Screenshot
+  screenshot02: /content/img/en/screenshot_02.png
+  screenshot02_alt: Screenshot
+  screenshot03: /content/img/en/screenshot_03.png
+  screenshot03_alt: Screenshot
 
 nav:
   brand_aria: Wordnerd 3D home

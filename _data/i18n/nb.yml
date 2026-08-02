@@ -20,6 +20,12 @@ lang_names:
 images:
   app_store_badge: /content/img/nb/app_store_badge.svg
   app_store_badge_alt: Last ned fra App Store
+  screenshot01: /content/img/nb/screenshot_01.png
+  screenshot01_alt: Skjermbilde
+  screenshot02: /content/img/nb/screenshot_02.png
+  screenshot02_alt: Skjermbilde
+  screenshot03: /content/img/nb/screenshot_03.png
+  screenshot03_alt: Skjermbilde
 
 nav:
   brand_aria: Wordnerd 3D hjem
