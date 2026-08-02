@@ -37,7 +37,7 @@ The game ends when the tile bag is empty and a player has played their last tile
 - **Play against a bot** – Three difficulty levels, from novice to expert
 - **Push notifications** – Get notified when it's your turn
 - **3D visuals** – Shiny, colorful tiles at a smooth 120 fps
-- **Wordnerd Premium** – Play without ads (coming soon)
+- **Wordnerd Premium** – Play without ads
 
 ## Development
 
