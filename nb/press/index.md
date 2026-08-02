@@ -38,6 +38,13 @@ Partiet er over når brikkeposen er tom og en av spillerne har lagt ut sin siste
 - **Push-varsler** – Få beskjed når det er din tur
 - **Wordnerd Premium** – Spill uten reklame
 
+## Utvikling
+
+> **David Skaufjord** ([Hållingwood](https://www.hållingwood.no/)) → Idé, design og prosjektledelse  
+> **Martin Lande** ([Lande Audio](https://landeaudio.com/)) → Programmering, design, grafikk og lyd
+
+Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell støtte fra [Midtnorsk Filmsenter](https://midtnorskfilm.no/).
+
 ## Bildemateriell
 
 <p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Last ned alt (ZIP, 11,5 MB)</a></strong></p>

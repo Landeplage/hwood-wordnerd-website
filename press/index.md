@@ -39,6 +39,13 @@ The game ends when the tile bag is empty and a player has played their last tile
 - **3D visuals** – Shiny, colorful tiles at a smooth 120 fps
 - **Wordnerd Premium** – Play without ads (coming soon)
 
+## Development
+
+> **David Skaufjord** ([Hållingwood](https://www.hållingwood.no/)) → Concept, design, and project management  
+> **Martin Lande** ([Lande Audio](https://landeaudio.com/)) → Programming, design, graphics, and audio
+
+Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support from [Midtnorsk Filmsenter](https://midtnorskfilm.no/).
+
 ## Assets
 
 <p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 11.5 MB)</a></strong></p>
