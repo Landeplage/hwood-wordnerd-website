@@ -16,7 +16,8 @@ Media assets and information for journalists, content creators, and partners cov
 > **Developer** • [Hållingwood A/S](https://www.hållingwood.no/)  
 > **Platforms** • iOS (iPhone and iPad), Android planned  
 > **Release date** • 2026  
-> **Price** • Free, with optional ad-free premium
+> **Price** • Free, with optional ad-free premium  
+> **Download** • [App Store]({{ site.app_store_url_ios }})
 
 ## Description
 

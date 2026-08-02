@@ -16,7 +16,8 @@ Medieressurser og informasjon for journalister, innholdsskapere og samarbeidspar
 > **Utvikler** • [Hållingwood A/S](https://www.hållingwood.no/)  
 > **Plattformer** • iOS (iPhone og iPad), Android-versjon kommer snart  
 > **Lanseringsdato** • 14 Juni, 2026  
-> **Pris** • Gratis, kan kjøpe Premium
+> **Pris** • Gratis, kan kjøpe Premium  
+> **Nedlasting** • [App Store]({{ site.app_store_url_ios }})
 
 ## Beskrivelse
 
