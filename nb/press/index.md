@@ -10,7 +10,7 @@ Medieressurser og informasjon for journalister, innholdsskapere og samarbeidspar
 
 <img class="press-hero" src="/content/press/key_art_01.png" alt="Wordnerd 3D key art" width="1600" height="840">
 
-## Faktaark
+## Fakta
 
 > **Tittel** • Wordnerd 3D  
 > **Utvikler** • [Hållingwood A/S](https://www.hållingwood.no/)  
