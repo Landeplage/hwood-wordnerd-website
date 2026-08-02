@@ -142,6 +142,11 @@ main > .hero:first-child {
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  /* Fill the space left of the brand and keep the links against the right
+     edge, at every width. */
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
   gap: 0.25rem 1.25rem;
   list-style: none;
   margin: 0;
@@ -170,33 +175,76 @@ main > .hero:first-child {
   color: var(--accent);
 }
 
-/* Language switcher: quieter than the nav links, and separated from them so it
-   doesn't read as another destination. */
+/* Language picker: a dropdown at every width, so it reads as one control
+   rather than as two more nav destinations. */
 .nav-lang {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  border-left: 1px solid var(--border);
 }
 
-.lang-switcher {
+.lang-menu {
+  position: relative;
+}
+
+.lang-menu summary {
   display: flex;
-  gap: 0.6rem;
   align-items: center;
-}
-
-.nav-links .lang-switcher a {
+  gap: 0.15rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
   color: var(--text-muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
 }
 
-.nav-links .lang-switcher a:hover {
+/* Safari still paints its own disclosure marker without this. */
+.lang-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.lang-menu summary i {
+  font-size: 1.1rem;
+}
+
+.lang-menu .lang-caret {
+  font-size: 0.7rem;
+}
+
+.lang-menu[open] summary {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.lang-menu-panel {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  min-width: 8rem;
+  padding: 0.3rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.nav-links .lang-menu-panel a {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.nav-links .lang-menu-panel a:hover {
   color: var(--accent-hover);
 }
 
-.nav-links .lang-switcher a.active {
+.nav-links .lang-menu-panel a.active {
   color: var(--text);
+  background: var(--surface-overlay);
 }
 
 /* ---------- Hero (landing) ---------- */
@@ -680,6 +728,30 @@ main > .hero:first-child {
     max-width: 260px;
     margin-bottom: -8%;
   }
+
+  /* Tighten the nav so the logo and the links share a single row rather than
+     stacking. */
+  .nav {
+    gap: 0.5rem;
+    padding: 0.6rem 0.7rem;
+  }
+
+  .nav-links {
+    gap: 0.25rem 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-links a {
+    gap: 0.3rem;
+  }
+
+  .nav-links a i {
+    font-size: 1.1em;
+  }
+
+  .nav-logo {
+    height: 24px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -698,21 +770,6 @@ main > .hero:first-child {
 
   .app-store-link img {
     height: 48px;
-  }
-
-  .nav-logo {
-    height: 26px;
-  }
-
-  /* The nav wraps at this width, so the divider before the language switcher
-     would land at the start of a new line. Drop it and tighten the gap. */
-  .nav-lang {
-    padding-left: 0;
-    border-left: 0;
-  }
-
-  .nav-links {
-    gap: 0.25rem 0.9rem;
   }
 
   .section {

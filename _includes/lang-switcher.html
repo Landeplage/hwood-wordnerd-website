@@ -1,21 +1,42 @@
 {%- comment -%}
-Language links for the current page. Plain anchors, so they work without JS;
-the script only records the choice so lang-detect.html stops guessing.
+Language picker for the current page: a dropdown of plain anchors, so it works
+without JS. The script only records the choice so lang-detect.html stops
+guessing, and closes the menu the way a menu is expected to close.
 Only lists languages the page actually exists in, so a page that sets
 `translated: [en]` never offers a link to a URL that would 404.
 
 Requires `lang`, `t` and `ref` in scope — include i18n.html first.
 {%- endcomment -%}
 {%- assign switch_langs = page.translated | default: site.languages -%}
-<nav class="lang-switcher" aria-label="{{ t.nav.lang_aria | default: t_en.nav.lang_aria }}">
-  {%- for l in switch_langs %}
-  <a href="{% include lang_url.html path=ref lang=l %}" hreflang="{{ l }}" data-set-lang="{{ l }}"{% if l == lang %} class="active" aria-current="true"{% endif %}>{{ t.lang_names[l] | default: t_en.lang_names[l] }}</a>
-  {%- endfor %}
-</nav>
+{%- assign lang_label = t.nav.lang_aria | default: t_en.nav.lang_aria -%}
+<details class="lang-menu">
+  <summary aria-label="{{ lang_label }}">
+    <i class="ti ti-language" aria-hidden="true"></i>
+    <i class="ti ti-caret-down lang-caret" aria-hidden="true"></i>
+  </summary>
+  <div class="lang-menu-panel">
+    {%- for l in switch_langs %}
+    <a href="{% include lang_url.html path=ref lang=l %}" hreflang="{{ l }}" data-set-lang="{{ l }}"{% if l == lang %} class="active" aria-current="true"{% endif %}>{{ t.lang_names[l] | default: t_en.lang_names[l] }}</a>
+    {%- endfor %}
+  </div>
+</details>
 <script>
   document.querySelectorAll("[data-set-lang]").forEach(function (link) {
     link.addEventListener("click", function () {
       try { localStorage.setItem("wn_lang", link.getAttribute("data-set-lang")); } catch (e) {}
     });
   });
+
+  // <details> has no notion of dismissal, so close the dropdown on an outside
+  // click or Escape the way a menu is expected to behave.
+  (function () {
+    var menu = document.querySelector(".lang-menu");
+    if (!menu) return;
+    document.addEventListener("click", function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.open) menu.open = false;
+    });
+  })();
 </script>

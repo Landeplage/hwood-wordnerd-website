@@ -18,6 +18,12 @@ alternates entirely.
 {%- assign p_desc = page.description | default: tp.description | default: tp_en.description | default: t.meta.site_description | default: t_en.meta.site_description -%}
 {%- assign p_image = page.image | default: t.images.og_image | default: t_en.images.og_image -%}
 {%- assign p_langs = page.translated | default: site.languages -%}
+{%- comment -%}
+Social cards render as prose rather than as a browser tab, where a pipe reads
+as markup. Swap it for an em dash in the OG/Twitter titles only — the <title>
+element keeps the pipe.
+{%- endcomment -%}
+{%- assign og_title = p_title | replace: " | ", " — " -%}
     <title>{{ p_title }}</title>
     <meta name="description" content="{{ p_desc }}">
     <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -28,7 +34,7 @@ alternates entirely.
     <!-- Open Graph (Facebook, LinkedIn, iMessage, Slack, Discord, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ t.meta.site_title | default: t_en.meta.site_title }}">
-    <meta property="og:title" content="{{ p_title }}">
+    <meta property="og:title" content="{{ og_title }}">
     <meta property="og:description" content="{{ p_desc }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ p_image | absolute_url }}">
@@ -39,7 +45,7 @@ alternates entirely.
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ p_title }}">
+    <meta name="twitter:title" content="{{ og_title }}">
     <meta name="twitter:description" content="{{ p_desc }}">
     <meta name="twitter:image" content="{{ p_image | absolute_url }}">
 {%- unless page.noindex %}
