@@ -1,20 +1,47 @@
 {
-	"applinks": {
-		"apps": [],
-		"details": [
-			{
-				"appIDs": ["4UNU78F2DR.com.hallingwood.wordnerd"],
-				"appID": "4UNU78F2DR.com.hallingwood.wordnerd",
-				"components": [
-					{ "/": "/invite", "comment": "Invite path without trailing slash" },
-					{ "/": "/invite/", "comment": "Shared invite links: /invite/?u=name" },
-					{ "/": "/invite/*", "comment": "Any deeper invite path" },
-					{ "/": "/*/invite", "comment": "Localized invite without trailing slash: /nb/invite" },
-					{ "/": "/*/invite/", "comment": "Localized invite links: /nb/invite/?u=name" },
-					{ "/": "/*/invite/*", "comment": "Any deeper localized invite path" }
-				],
-				"paths": ["/invite", "/invite/", "/invite/*", "/*/invite", "/*/invite/", "/*/invite/*"]
-			}
-		]
-	}
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "VFMFSV927D.com.hallingwood.wordnerd"
+        ],
+        "appID": "VFMFSV927D.com.hallingwood.wordnerd",
+        "components": [
+          {
+            "/": "/invite",
+            "comment": "Invite path without trailing slash"
+          },
+          {
+            "/": "/invite/",
+            "comment": "Shared invite links: /invite/?u=name"
+          },
+          {
+            "/": "/invite/*",
+            "comment": "Any deeper invite path"
+          },
+          {
+            "/": "/*/invite",
+            "comment": "Localized invite without trailing slash: /nb/invite"
+          },
+          {
+            "/": "/*/invite/",
+            "comment": "Localized invite links: /nb/invite/?u=name"
+          },
+          {
+            "/": "/*/invite/*",
+            "comment": "Any deeper localized invite path"
+          }
+        ],
+        "paths": [
+          "/invite",
+          "/invite/",
+          "/invite/*",
+          "/*/invite",
+          "/*/invite/",
+          "/*/invite/*"
+        ]
+      }
+    ]
+  }
 }
