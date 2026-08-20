@@ -2,19 +2,85 @@
 {%- assign ti = t.invite -%}
 {%- assign ti_en = t_en.invite -%}
 
-<div class="container content">
-  <h1>{{ ti.heading | default: ti_en.heading }}</h1>
-  <p id="invite-line">{{ ti.headline | default: ti_en.headline }}</p>
-  <p>
-    {{ ti.blurb | default: ti_en.blurb }}
-  </p>
-  <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
-    <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
-  </a>
-  <p id="invite-hint" hidden>
-    {{ ti.hint | default: ti_en.hint }}
-  </p>
-</div>
+<section class="invite-stage">
+  {%- comment -%}
+  Decorative tile drift. Purely CSS — the letters spell WORDNERD, and the
+  point values match the game's own tile art. aria-hidden: it carries no
+  meaning a screen reader needs.
+  {%- endcomment -%}
+  <div class="invite-tiles" aria-hidden="true">
+    <span class="invite-tile invite-tile--1" data-pts="4">W</span>
+    <span class="invite-tile invite-tile--2" data-pts="1">O</span>
+    <span class="invite-tile invite-tile--3" data-pts="1">R</span>
+    <span class="invite-tile invite-tile--4" data-pts="2">D</span>
+    <span class="invite-tile invite-tile--5" data-pts="1">N</span>
+    <span class="invite-tile invite-tile--6" data-pts="1">E</span>
+    <span class="invite-tile invite-tile--7" data-pts="1">R</span>
+    <span class="invite-tile invite-tile--8" data-pts="2">D</span>
+  </div>
+
+  <div class="container invite-grid">
+    <div class="invite-content">
+      <div class="invite-card">
+        {%- comment -%}
+        The app icon, not the inviter's avatar: the invite link carries only a
+        username, and the site is static, so there is nothing to fetch a real
+        avatar from. Decorative — the heading right below says the same thing.
+
+        Versioned on its own mtime, the same way the stylesheet is, so
+        replacing the artwork actually reaches people who already have the old
+        one cached.
+        {%- endcomment -%}
+        {%- assign icon_file = site.static_files | where: "path", "/content/img/app_icon.png" | first -%}
+        {%- assign icon_ver = icon_file.modified_time | default: site.time | date: "%s" -%}
+        <img src="/content/img/app_icon.png?v={{ icon_ver }}" alt="" class="invite-appicon" />
+
+        <span class="eyebrow">{{ ti.eyebrow | default: ti_en.eyebrow }}</span>
+        <h1 class="invite-title">{{ ti.heading | default: ti_en.heading }}</h1>
+
+        <p class="invite-headline" id="invite-line">{{ ti.headline | default: ti_en.headline }}</p>
+
+        <p class="invite-blurb">
+          {{ ti.blurb | default: ti_en.blurb }}
+        </p>
+
+        <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
+        </a>
+
+        <p class="invite-free">
+          <i class="ti ti-download" aria-hidden="true"></i>
+          {{ ti.free_note | default: ti_en.free_note }}
+        </p>
+
+        <p class="invite-hint" id="invite-hint" hidden>
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <span>{{ ti.hint | default: ti_en.hint }}</span>
+        </p>
+      </div>
+
+      <ul class="invite-perks">
+        {%- assign perks = ti.perks | default: ti_en.perks -%}
+        {%- for perk in perks %}
+        <li class="invite-perk">
+          <i class="ti {{ perk.icon }}" aria-hidden="true"></i>
+          <span>{{ perk.text }}</span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    {%- comment -%}
+    Placeholder art: the landing hero's phone render, reused so the page has
+    something to look at. It sits flush with the floor of the stage, so the
+    arm is cropped by the section edge rather than ending in mid-air. Swap in a
+    dedicated invite render when one exists.
+    {%- endcomment -%}
+    <div class="invite-art">
+      <img src="/content/img/hero_phone.png" alt="{{ ti.art_alt | default: ti_en.art_alt }}" class="invite-phone" />
+    </div>
+  </div>
+</section>
 
 {%- capture headline_from -%}{{ ti.headline_from | default: ti_en.headline_from }}{%- endcapture -%}
 <script>

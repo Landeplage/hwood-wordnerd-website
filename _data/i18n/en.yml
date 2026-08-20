@@ -115,3 +115,13 @@ invite:
   headline_from: "[name] has invited you to play Wordnerd 3D!"
   blurb: A word game like no other — build words in three dimensions, in all six directions, and outsmart your friends.
   hint: Already have the app? Search for the username above to start a game.
+  eyebrow: You're invited
+  free_note: Free to download. Play your first game in minutes.
+  art_alt: Wordnerd 3D on a phone
+  perks:
+    - icon: ti-3d-cube-sphere
+      text: Words in six directions
+    - icon: ti-users
+      text: Play against friends
+    - icon: ti-clock
+      text: Turn-based, no rush

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're invited | Wordnerd 3D</title>
+    <meta name="description" content="You've been invited to play Wordnerd 3D — a word game in three dimensions.">
+    <link rel="canonical" href="http://0.0.0.0:4000/invite/">
+    <meta name="robots" content="noindex">
+
+    <!-- Open Graph (Facebook, LinkedIn, iMessage, Slack, Discord, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Wordnerd 3D">
+    <meta property="og:title" content="You're invited — Wordnerd 3D">
+    <meta property="og:description" content="You've been invited to play Wordnerd 3D — a word game in three dimensions.">
+    <meta property="og:url" content="http://0.0.0.0:4000/invite/">
+    <meta property="og:image" content="http://0.0.0.0:4000/content/img/en/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="nb_NO">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="You're invited — Wordnerd 3D">
+    <meta name="twitter:description" content="You've been invited to play Wordnerd 3D — a word game in three dimensions.">
+    <meta name="twitter:image" content="http://0.0.0.0:4000/content/img/en/og-image.png">
+
+
+    <!-- Browser chrome / message-app accent on mobile -->
+    <meta name="theme-color" content="#0b1426">
+<script>
+      (function () {
+        var SUPPORTED = ["en","nb"];
+        var DEFAULT = "en";
+        var PAGE_LANG = "en";
+        var ALT = { "en": "/invite/", "nb": "/nb/invite/" };
+        var KEY = "wn_lang";
+
+        // "nb-NO" and "nb" both resolve to "nb"; anything unsupported to null.
+        function normalize(tag) {
+          var base = String(tag || "").toLowerCase().split("-")[0];
+          return SUPPORTED.indexOf(base) !== -1 ? base : null;
+        }
+
+        var explicit = normalize(new URLSearchParams(window.location.search).get("lang"));
+        if (explicit) {
+          try { localStorage.setItem(KEY, explicit); } catch (e) {}
+        }
+
+        if (PAGE_LANG !== DEFAULT) return; // rule 1
+
+        var target = explicit;
+        if (!target) {
+          try { target = normalize(localStorage.getItem(KEY)); } catch (e) {}
+        }
+
+        if (!target) { // rule 3: guess from the browser, once per tab
+          try {
+            if (sessionStorage.getItem(KEY + "_auto")) return;
+            sessionStorage.setItem(KEY + "_auto", "1");
+          } catch (e) {}
+          var preferred = navigator.languages || [navigator.language];
+          for (var i = 0; i < preferred.length && !target; i++) {
+            target = normalize(preferred[i]);
+          }
+        }
+
+        if (!target || target === DEFAULT) return; // rule 2
+        var dest = ALT[target];
+        if (dest && dest !== window.location.pathname) {
+          window.location.replace(dest + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css?v=preview1787238712">
+    <link rel="icon" type="image/png" sizes="32x32" href="/content/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/content/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/content/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/content/favicon/favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+    <div class="container nav">
+        <a class="nav-brand" href="/" aria-label="Wordnerd 3D home">
+            <img src="/content/img/logo-flat.png" alt="Wordnerd 3D" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/"><i class="ti ti-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="/support/"><i class="ti ti-lifebuoy" aria-hidden="true"></i> Support</a></li>
+            <li><a href="/press/"><i class="ti ti-news" aria-hidden="true"></i> Press</a></li>
+            <li class="nav-lang"><details class="lang-menu">
+  <summary aria-label="Language">
+    <i class="ti ti-language" aria-hidden="true"></i>
+    <i class="ti ti-caret-down lang-caret" aria-hidden="true"></i>
+  </summary>
+  <div class="lang-menu-panel">
+    <a href="/invite/" hreflang="en" data-set-lang="en" class="active" aria-current="true">English</a>
+    <a href="/nb/invite/" hreflang="nb" data-set-lang="nb">Norsk</a>
+  </div>
+</details>
+<script>
+  document.querySelectorAll("[data-set-lang]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      try { localStorage.setItem("wn_lang", link.getAttribute("data-set-lang")); } catch (e) {}
+    });
+  });
+
+  // <details> has no notion of dismissal, so close the dropdown on an outside
+  // click or Escape the way a menu is expected to behave.
+  (function () {
+    var menu = document.querySelector(".lang-menu");
+    if (!menu) return;
+    document.addEventListener("click", function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && menu.open) menu.open = false;
+    });
+  })();
+</script>
+</li>
+        </ul>
+    </div>
+</header>
+
+    <main>
+
+
+
+<section class="invite-stage">
+  
+  <div class="invite-tiles" aria-hidden="true">
+    <span class="invite-tile invite-tile--1" data-pts="4">W</span>
+    <span class="invite-tile invite-tile--2" data-pts="1">O</span>
+    <span class="invite-tile invite-tile--3" data-pts="1">R</span>
+    <span class="invite-tile invite-tile--4" data-pts="2">D</span>
+    <span class="invite-tile invite-tile--5" data-pts="1">N</span>
+    <span class="invite-tile invite-tile--6" data-pts="1">E</span>
+    <span class="invite-tile invite-tile--7" data-pts="1">R</span>
+    <span class="invite-tile invite-tile--8" data-pts="2">D</span>
+  </div>
+
+  <div class="container invite-grid">
+    <div class="invite-content">
+      <div class="invite-card">
+        
+        
+        
+        <img src="/content/img/app_icon.png?v=preview" alt="" class="invite-appicon" />
+
+        <span class="eyebrow">You're invited</span>
+        <h1 class="invite-title">Wordnerd 3D</h1>
+
+        <p class="invite-headline" id="invite-line">You've been invited to play Wordnerd 3D!</p>
+
+        <p class="invite-blurb">
+          A word game like no other — build words in three dimensions, in all six directions, and outsmart your friends.
+        </p>
+
+        <a class="app-store-link" href="https://apps.apple.com/app/id6755068519" target="_blank" rel="noopener noreferrer">
+          <img src="/content/img/en/app_store_badge.svg" alt="Download on the App Store" />
+        </a>
+
+        <p class="invite-free">
+          <i class="ti ti-download" aria-hidden="true"></i>
+          Free to download. Play your first game in minutes.
+        </p>
+
+        <p class="invite-hint" id="invite-hint" hidden>
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <span>Already have the app? Search for the username above to start a game.</span>
+        </p>
+      </div>
+
+      <ul class="invite-perks">
+        
+        
+        <li class="invite-perk">
+          <i class="ti ti-3d-cube-sphere" aria-hidden="true"></i>
+          <span>Words in six directions</span>
+        </li>
+        
+        <li class="invite-perk">
+          <i class="ti ti-users" aria-hidden="true"></i>
+          <span>Play against friends</span>
+        </li>
+        
+        <li class="invite-perk">
+          <i class="ti ti-clock" aria-hidden="true"></i>
+          <span>Turn-based, no rush</span>
+        </li>
+        
+      </ul>
+    </div>
+
+    
+    <div class="invite-art">
+      <img src="/content/img/hero_phone.png" alt="Wordnerd 3D on a phone" class="invite-phone" />
+    </div>
+  </div>
+</section>
+
+[name] has invited you to play Wordnerd 3D!
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var name = params.get("u"); // already percent-decoded by URLSearchParams
+    if (!name || name.length === 0 || name.length > 32) return;
+
+    // The template carries [name] so locales can place the username anywhere
+    // in the sentence, not just at the front.
+    var parts = "[name] has invited you to play Wordnerd 3D!".split("[name]");
+    var line = document.getElementById("invite-line");
+    line.textContent = "";
+    for (var i = 0; i < parts.length; i++) {
+      if (i > 0) {
+        var strong = document.createElement("strong");
+        strong.textContent = name;
+        line.appendChild(strong);
+      }
+      line.appendChild(document.createTextNode(parts[i]));
+    }
+    document.getElementById("invite-hint").hidden = false;
+  })();
+</script>
+</main>
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Wordnerd 3D</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/press/">Press kit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <ul>
+          <li><a href="/support/">Support &amp; FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Hållingwood A/S. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

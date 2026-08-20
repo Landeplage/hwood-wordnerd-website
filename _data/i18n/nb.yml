@@ -112,3 +112,13 @@ invite:
   headline_from: "[name] har invitert deg til å spille Wordnerd 3D!"
   blurb: Et ordspill ulikt alle andre — bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine.
   hint: Har du allerede appen? Søk opp brukernavnet over for å starte et parti.
+  eyebrow: Du er invitert
+  free_note: Gratis å laste ned. Spill ditt første parti på minutter.
+  art_alt: Wordnerd 3D på en telefon
+  perks:
+    - icon: ti-3d-cube-sphere
+      text: Ord i seks retninger
+    - icon: ti-users
+      text: Spill mot venner
+    - icon: ti-clock
+      text: Turbasert, ingen hastverk
