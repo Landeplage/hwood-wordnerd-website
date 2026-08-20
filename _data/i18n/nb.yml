@@ -104,13 +104,13 @@ support:
 
 invite:
   title: Du er invitert | Wordnerd 3D
-  description: Du er invitert til å spille Wordnerd 3D — et ordspill i tre dimensjoner.
+  description: Du er invitert til å spille Wordnerd 3D - et ordspill i tre dimensjoner.
   heading: Wordnerd 3D
   headline: Du er invitert til å spille Wordnerd 3D!
   # [name] erstattes med brukernavnet til den som inviterer, fra ?u=-parameteren.
   # Behold plassholderen — språk som trenger navnet midt i setningen er avhengig av den.
   headline_from: "[name] har invitert deg til å spille Wordnerd 3D!"
-  blurb: Et ordspill ulikt alle andre — bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine.
+  blurb: "Et ordspill ulikt alle andre: Bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine."
   hint: Har du allerede appen? Søk opp brukernavnet over for å starte et parti.
   eyebrow: Du er invitert
   free_note: Gratis å laste ned. Spill ditt første parti på minutter.

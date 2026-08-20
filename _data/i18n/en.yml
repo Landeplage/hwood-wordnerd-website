@@ -107,13 +107,13 @@ support:
 
 invite:
   title: You're invited | Wordnerd 3D
-  description: You've been invited to play Wordnerd 3D — a word game in three dimensions.
+  description: You've been invited to play Wordnerd 3D - a word game in three dimensions.
   heading: Wordnerd 3D
   headline: You've been invited to play Wordnerd 3D!
   # [name] is replaced with the inviter's username from the ?u= query parameter.
   # Keep the placeholder — locales that need the name mid-sentence depend on it.
   headline_from: "[name] has invited you to play Wordnerd 3D!"
-  blurb: A word game like no other — build words in three dimensions, in all six directions, and outsmart your friends.
+  blurb: "A word game like no other: build words in three dimensions, in all six directions, and outsmart your friends."
   hint: Already have the app? Search for the username above to start a game.
   eyebrow: You're invited
   free_note: Free to download. Play your first game in minutes.
