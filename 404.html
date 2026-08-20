@@ -1,0 +1,36 @@
+---
+layout: default
+noindex: true
+translated: [en]
+permalink: /404.html
+---
+{% include i18n.html %}
+<section class="container" style="padding: 4rem 1.5rem; text-align: center;">
+  <h1>Page not found</h1>
+  <p>The page you requested does not exist.</p>
+  <p><a href="/">Return to home</a></p>
+</section>
+
+<script>
+  (function () {
+    var SUPPORTED = {{ site.languages | jsonify }};
+    var path = window.location.pathname || "/";
+
+    // Match /<maybe-lang>/invite[/...]
+    var match = path.match(/^\/([^/]+)(\/invite(?:\/.*)?$)/i);
+    if (!match) return;
+
+    var maybeLang = match[1];
+    var inviteSuffix = match[2];
+
+    // Only treat language-like prefixes as malformed language codes.
+    var langLike = /^[a-z]{2}(?:-[a-z]{2})?$/i.test(maybeLang);
+    if (!langLike) return;
+
+    var base = maybeLang.toLowerCase().split("-")[0];
+    if (SUPPORTED.indexOf(base) !== -1) return;
+
+    var canonicalInvitePath = inviteSuffix === "/invite" ? "/invite/" : inviteSuffix;
+    window.location.replace(canonicalInvitePath + window.location.search + window.location.hash);
+  })();
+</script>
