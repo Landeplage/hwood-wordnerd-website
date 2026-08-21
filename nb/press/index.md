@@ -48,9 +48,9 @@ Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell stø
 
 ## Bildemateriell
 
-<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Last ned alt (ZIP, 11,5 MB)</a></strong></p>
+<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Last ned alt (ZIP, 12,3 MB)</a></strong></p>
 
-### Logoer
+### Logoer og appikon
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
@@ -60,6 +60,10 @@ Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell stø
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
     <img src="/content/img/logo-flat.png" alt="Wordnerd 3D-logo, flat versjon" width="992" height="392" loading="lazy">
     <span class="asset-caption"><span>Logo — flat</span>PNG · 992 × 392 px</span>
+  </a>
+  <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/app_icon.png">
+    <img src="/content/img/app_icon.png" alt="Wordnerd 3D-appikon" width="1024" height="1024" loading="lazy">
+    <span class="asset-caption"><span>Appikon</span>PNG · 1024 × 1024 px</span>
   </a>
 </div>
 

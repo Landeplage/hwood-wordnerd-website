@@ -49,9 +49,9 @@ Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support
 
 ## Assets
 
-<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 11.5 MB)</a></strong></p>
+<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 12.3 MB)</a></strong></p>
 
-### Logos
+### Logos and app icon
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
@@ -61,6 +61,10 @@ Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
     <img src="/content/img/logo-flat.png" alt="Wordnerd 3D logo, flat version" width="992" height="392" loading="lazy">
     <span class="asset-caption"><span>Logo — flat</span>PNG · 992 × 392 px</span>
+  </a>
+  <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/app_icon.png">
+    <img src="/content/img/app_icon.png" alt="Wordnerd 3D app icon" width="1024" height="1024" loading="lazy">
+    <span class="asset-caption"><span>App icon</span>PNG · 1024 × 1024 px</span>
   </a>
 </div>
 
