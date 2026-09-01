@@ -1,17 +1,26 @@
 {%- comment -%}
 Sends iOS and Android visitors straight to their app store, so a QR-code scan
 lands them one tap from the install prompt instead of on a page they have to
-read first. Inlined in <head> before the stylesheet, the same way
-lang-detect.html is, so it fires before first paint. Opt in per page with
-`store_redirect: true` in front matter.
+read first. Opt in per page with `store_redirect: true` in front matter.
 
-Runs before lang-detect.html on purpose: once a store redirect fires, the
-visitor is leaving the site, so there's no point letting lang-detect also try
-to route them to a translated page first.
+Deliberately runs *after* the page has rendered and painted, and is included
+at the end of <body> rather than in <head>. Handing off from <head> opens the
+store over a document that never received any content, so dismissing the
+store sheet ("Not now") drops the visitor on a blank page. Letting the
+fallback card paint first means that card is what's waiting behind the sheet.
+
+The sessionStorage guard makes the auto-launch a once-per-tab event. Without
+it, coming back from a dismissed store sheet re-triggers the handoff and the
+visitor is yanked straight back into the store, unable to reach the page.
+Once it has fired, the App Store badge on the card is the way back in.
+
+Because this no longer pre-empts lang-detect.html in <head>, a visitor whose
+browser prefers another language is routed to their translated copy first
+(pre-paint, so it's invisible) and the fallback behind the store sheet is
+localized — which is what we want.
 
 site.play_store_url_android is blank until Android ships, so Android visitors
-currently fall through with everyone else to the fallback card rendered in
-the page body.
+currently fall through to the fallback card with everyone else.
 {%- endcomment -%}
 <script>
   (function () {
@@ -24,6 +33,28 @@ the page body.
     var IOS_URL = {{ site.app_store_url_ios | default: "" | jsonify }};
     var ANDROID_URL = {{ site.play_store_url_android | default: "" | jsonify }};
     var dest = isIOS ? IOS_URL : (isAndroid ? ANDROID_URL : "");
-    if (dest) window.location.replace(dest);
+    if (!dest) return;
+
+    var KEY = "wn_store_auto";
+    try {
+      if (sessionStorage.getItem(KEY)) return;
+      sessionStorage.setItem(KEY, "1");
+    } catch (e) {}
+
+    function go() {
+      // Two frames, so the browser has actually painted the card rather than
+      // merely finished parsing it.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          window.location.href = dest;
+        });
+      });
+    }
+
+    if (document.readyState === "complete") {
+      go();
+    } else {
+      window.addEventListener("load", go);
+    }
   })();
 </script>

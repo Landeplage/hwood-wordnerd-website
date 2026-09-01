@@ -7,9 +7,6 @@
 
     <!-- Browser chrome / message-app accent on mobile -->
     <meta name="theme-color" content="#0b1426">
-{%- if page.store_redirect %}
-{% include store-redirect.html %}
-{%- endif %}
 {% include lang-detect.html %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,5 +30,13 @@
         {{ content }}
     </main>
     {% include footer.html %}
+{%- comment -%}
+    Last in the body on purpose: it hands off to the app store only after the
+    page has painted, so a dismissed store sheet reveals the page rather than
+    a blank document. See the include for the full reasoning.
+{%- endcomment -%}
+{%- if page.store_redirect %}
+{% include store-redirect.html %}
+{%- endif %}
 </body>
 </html>

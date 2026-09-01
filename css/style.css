@@ -1190,7 +1190,9 @@ main > .invite-stage:first-child {
   width: 76px;
   height: 76px;
   border-radius: 18px;
-  margin-bottom: 1.5rem;
+  /* The base `img` rule makes images block-level, so the card's
+     text-align: center can't reach it — auto margins do. */
+  margin: 0 auto 1.5rem;
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08),
     0 14px 32px rgba(0, 0, 0, 0.5);
