@@ -1235,9 +1235,12 @@ main > .invite-stage:first-child {
   margin-top: 0.2em;
 }
 
+/* Flex rather than grid: with three tiles and room for two, grid leaves the
+   odd one out stuck in the first column. Flex wrapping centers it instead. */
 .get-platforms {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin: 1.75rem 0 0;
   padding: 0;
@@ -1245,6 +1248,12 @@ main > .invite-stage:first-child {
 }
 
 .get-platform {
+  /* Share the row evenly, but cap the width so a tile that wraps onto a row
+     of its own stays tile-sized rather than stretching across the container.
+     The cap sits just above the ~189px three-across gets at full width, so it
+     only ever bites on a wrapped row. */
+  flex: 1 1 160px;
+  max-width: 200px;
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--bg-elevated);
@@ -1301,5 +1310,14 @@ main > .invite-stage:first-child {
 @media (max-width: 600px) {
   .get-card {
     padding: 2rem 1.5rem;
+  }
+
+  /* Once all three no longer fit on one row, stop them growing. Growing is
+     what fills the card edge-to-edge at full width, but on a wrapped row it
+     sizes each row independently — leaving the odd tile out wider than the
+     two above it. Fixed-basis tiles stay identical whichever row they land
+     on, and justify-content keeps every row centered. */
+  .get-platform {
+    flex-grow: 0;
   }
 }
