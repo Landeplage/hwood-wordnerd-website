@@ -122,3 +122,24 @@ invite:
       text: Spill mot venner
     - icon: ti-clock
       text: Turbasert, ingen hastverk
+
+get:
+  title: Last ned Wordnerd 3D
+  description: Last ned Wordnerd 3D — tilgjengelig nå i App Store, med Android og nettversjon på vei.
+  eyebrow: Last ned appen
+  heading: Wordnerd 3D
+  blurb: "Et ordspill ulikt alle andre: Bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine."
+  android_note: Wordnerd 3D for Android er på vei. I mellomtiden kan du spille på iOS, eller sjekke tilbake senere.
+  platforms:
+    - name: App Store
+      icon: ti-brand-apple
+      status: available
+      status_label: Tilgjengelig nå
+    - name: Google Play
+      icon: ti-brand-google-play
+      status: soon
+      status_label: Kommer snart
+    - name: Web
+      icon: ti-world
+      status: soon
+      status_label: Kommer snart

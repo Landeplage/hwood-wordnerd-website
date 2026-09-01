@@ -1,0 +1,62 @@
+{%- comment -%}
+The fallback card for /get/ — what iOS/Android visitors would only glimpse
+for an instant before store-redirect.html sends them onward, and what
+everyone else (desktop, an Android visitor before Play Store launch) actually
+reads. Keep it self-contained: it renders before store-redirect.html's
+redirect can be ruled out client-side, so it must make sense on its own.
+{%- endcomment -%}
+{%- include i18n.html -%}
+{%- assign tg = t.get -%}
+{%- assign tg_en = t_en.get -%}
+
+<section class="section section--centered get-stage">
+  <div class="container get-container">
+    <div class="get-card">
+      {%- assign icon_file = site.static_files | where: "path", "/content/img/app_icon.png" | first -%}
+      {%- assign icon_ver = icon_file.modified_time | default: site.time | date: "%s" -%}
+      <img src="/content/img/app_icon.png?v={{ icon_ver }}" alt="" class="get-appicon" />
+
+      <span class="eyebrow">{{ tg.eyebrow | default: tg_en.eyebrow }}</span>
+      <h1 class="get-title">{{ tg.heading | default: tg_en.heading }}</h1>
+      <p class="get-blurb">{{ tg.blurb | default: tg_en.blurb }}</p>
+
+      <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
+      </a>
+
+      {%- comment -%}
+      Only shown to Android UAs, detected client-side below — everyone else
+      never sees it, so it stays out of the tab order via [hidden].
+      {%- endcomment -%}
+      <p class="get-android-note" id="get-android-note" hidden>
+        <i class="ti ti-info-circle" aria-hidden="true"></i>
+        <span>{{ tg.android_note | default: tg_en.android_note }}</span>
+      </p>
+    </div>
+
+    <ul class="get-platforms">
+      {%- assign platforms = tg.platforms | default: tg_en.platforms -%}
+      {%- for plat in platforms %}
+      <li class="get-platform get-platform--{{ plat.status }}">
+        {%- if plat.status == 'available' -%}
+        <a href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer" class="get-platform-link">
+        {%- endif %}
+          <i class="ti {{ plat.icon }}" aria-hidden="true"></i>
+          <span class="get-platform-name">{{ plat.name }}</span>
+          <span class="get-platform-status">{{ plat.status_label }}</span>
+        {%- if plat.status == 'available' -%}
+        </a>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<script>
+  (function () {
+    if (!/Android/.test(navigator.userAgent || "")) return;
+    var note = document.getElementById("get-android-note");
+    if (note) note.hidden = false;
+  })();
+</script>

@@ -125,3 +125,29 @@ invite:
       text: Play against friends
     - icon: ti-clock
       text: Turn-based, no rush
+
+# The QR-code landing page. iOS and Android visitors are redirected straight
+# to their store client-side (see _includes/store-redirect.html) and only
+# glimpse this for an instant; everyone else reads it as the actual page.
+get:
+  title: Get Wordnerd 3D
+  description: Download Wordnerd 3D — available now on the App Store, with Android and web coming soon.
+  eyebrow: Get the app
+  heading: Wordnerd 3D
+  blurb: "A word game like no other: build words in three dimensions, in all six directions, and outsmart your friends."
+  # Shown only to Android visitors, detected client-side. Relevant only while
+  # Google Play isn't yet a redirect target; drop it once Android ships.
+  android_note: Wordnerd 3D for Android is on its way. In the meantime, grab it on iOS or check back soon.
+  platforms:
+    - name: App Store
+      icon: ti-brand-apple
+      status: available
+      status_label: Available now
+    - name: Google Play
+      icon: ti-brand-google-play
+      status: soon
+      status_label: Coming soon
+    - name: Web
+      icon: ti-world
+      status: soon
+      status_label: Coming soon

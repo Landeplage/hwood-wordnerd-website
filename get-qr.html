@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /GET/
+noindex: true
+store_redirect: true
+ref: /get/
+tkey: get
+---
+{%- comment -%}
+Source file deliberately isn't named "get/index.html" with different casing:
+on a case-insensitive filesystem (default macOS/APFS, and Docker Desktop bind
+mounts on a Mac) a "get/" and a "GET/" *source* path would collide and one
+would clobber the other on checkout. Naming this file something else
+entirely and pointing `permalink` at the uppercase URL sidesteps that, while
+still emitting a real "/GET/index.html" on the case-sensitive Linux box that
+actually builds and serves the site (GitHub Pages).
+
+QR codes read better in all-caps (denser byte-mode encoding), so the printed
+code points at https://wordnerd3d.com/GET — this is that route. /get/ is the
+canonical, indexable copy; this one is a thin noindex mirror.
+
+Known limitation: because of the case-insensitivity above, `docker compose up`
+on a Mac can't render /get/ and /GET/ as distinct pages locally — they share
+one entry in the local `_site/` output. Both pages render identical content
+regardless (same include), so this only affects local preview of the
+uppercase-specific front matter, never production.
+{%- endcomment -%}
+{% include pages/get.html %}

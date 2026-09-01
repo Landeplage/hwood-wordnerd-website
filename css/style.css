@@ -1163,3 +1163,141 @@ main > .invite-stage:first-child {
     animation: none;
   }
 }
+
+/* ---------- Get (QR landing) ---------- */
+.get-container {
+  max-width: 640px;
+}
+
+.get-card {
+  position: relative;
+  padding: 2.5rem;
+  border: 1px solid rgba(95, 176, 255, 0.22);
+  border-radius: 24px;
+  background: linear-gradient(
+    165deg,
+    rgba(24, 42, 74, 0.92),
+    rgba(11, 20, 38, 0.92)
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 30px 70px rgba(0, 0, 0, 0.45);
+}
+
+.get-appicon {
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 14px 32px rgba(0, 0, 0, 0.5);
+}
+
+.get-title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+}
+
+.get-blurb {
+  color: var(--text-muted);
+  max-width: 34em;
+  margin: 0 auto 1.75rem;
+}
+
+.get-android-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 1.5rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.get-android-note[hidden] {
+  display: none;
+}
+
+.get-android-note i {
+  font-size: 1.1em;
+  color: var(--accent);
+  flex: none;
+  margin-top: 0.2em;
+}
+
+.get-platforms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.get-platform {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-elevated);
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.get-platform i {
+  font-size: 1.6rem;
+  color: var(--text-muted);
+}
+
+.get-platform-name {
+  font-weight: 700;
+}
+
+.get-platform-status {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.get-platform--available {
+  border-color: rgba(95, 176, 255, 0.4);
+}
+
+.get-platform--available i {
+  color: var(--accent);
+}
+
+.get-platform--available .get-platform-status {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.get-platform-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  color: inherit;
+}
+
+.get-platform-link:hover {
+  text-decoration: none;
+}
+
+.get-platform-link:hover .get-platform-name {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .get-card {
+    padding: 2rem 1.5rem;
+  }
+}

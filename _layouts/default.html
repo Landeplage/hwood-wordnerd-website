@@ -7,6 +7,9 @@
 
     <!-- Browser chrome / message-app accent on mobile -->
     <meta name="theme-color" content="#0b1426">
+{%- if page.store_redirect %}
+{% include store-redirect.html %}
+{%- endif %}
 {% include lang-detect.html %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

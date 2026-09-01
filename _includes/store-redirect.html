@@ -1,0 +1,29 @@
+{%- comment -%}
+Sends iOS and Android visitors straight to their app store, so a QR-code scan
+lands them one tap from the install prompt instead of on a page they have to
+read first. Inlined in <head> before the stylesheet, the same way
+lang-detect.html is, so it fires before first paint. Opt in per page with
+`store_redirect: true` in front matter.
+
+Runs before lang-detect.html on purpose: once a store redirect fires, the
+visitor is leaving the site, so there's no point letting lang-detect also try
+to route them to a translated page first.
+
+site.play_store_url_android is blank until Android ships, so Android visitors
+currently fall through with everyone else to the fallback card rendered in
+the page body.
+{%- endcomment -%}
+<script>
+  (function () {
+    var ua = navigator.userAgent || navigator.vendor || "";
+    var isIOS = /iPad|iPhone|iPod/.test(ua) ||
+      // iPadOS 13+ reports as "MacIntel" in the UA string; touch points is
+      // the only thing that still tells it apart from an actual Mac.
+      (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    var isAndroid = !isIOS && /Android/.test(ua);
+    var IOS_URL = {{ site.app_store_url_ios | default: "" | jsonify }};
+    var ANDROID_URL = {{ site.play_store_url_android | default: "" | jsonify }};
+    var dest = isIOS ? IOS_URL : (isAndroid ? ANDROID_URL : "");
+    if (dest) window.location.replace(dest);
+  })();
+</script>
