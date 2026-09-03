@@ -6,9 +6,9 @@ description: Privacy policy for Wordnerd 3D.
 
 # Privacy Policy
 
-**Last updated:** 01.06.2026
+**Last updated:** 03.09.2026
 
-Hållingwood A/S ("Hållingwood", "we", "us") respects your privacy and is committed to protecting your personal data. This policy explains what data we collect when you use Wordnerd 3D (the "Game"), why we collect it, how we use it, and what rights you have.
+Hållingwood A/S ("Hållingwood", "we", "us") respects your privacy and is committed to protecting your personal data. This policy explains what data we collect when you use Wordnerd 3D (the "Game"), our website, and our download links; why we collect it; how we use it; and what rights you have.
 
 We are the **data controller** for the processing described in this policy. We comply with the EU General Data Protection Regulation (GDPR), as incorporated into Norwegian law through the Personal Data Act (Personopplysningsloven), and with applicable privacy laws in other jurisdictions where the Game is available.
 
@@ -66,6 +66,23 @@ We only collect data we need to operate the Game. The categories below describe 
 
 **We do not see, store, or process your payment card details.** All payments are handled by Apple or Google under their own terms and privacy policies.
 
+### Website and QR campaign analytics
+
+When you follow one of our campaign-specific QR links, we record:
+
+- The short campaign code contained in the link and the time it was opened
+- A truncated IP address, used to estimate repeat scans without identifying a specific device
+- Country derived from the IP address and a broad platform category (such as iOS, Android, or desktop)
+- Whether the request appears automated or is a probable immediate duplicate
+
+We do not use cookies or advertising identifiers for this analytics, and we do not retain the full IP address or browser user-agent string.
+
+**Purpose:** measure which physical campaigns are useful, improve how we promote the Game, produce aggregate statistics, and protect the service from automated abuse.
+
+**Legal basis:** legitimate interest (GDPR Art. 6(1)(f)) — specifically, our interest in understanding the effectiveness of our own marketing with limited, first-party data. We minimize the data, do not use it to build individual profiles, and do not share it with advertising networks.
+
+**Retention:** individual scan records are deleted after 400 days.
+
 ### Push notification token
 
 - A device token issued by Apple Push Notification service (or Firebase Cloud Messaging on Android)
@@ -107,6 +124,7 @@ We do not transfer your data to any other third parties except where required by
 | Gameplay data           | Until you delete your account, then anonymized       |
 | Server logs (technical) | Up to 30 days                                        |
 | IP addresses            | Truncated; not stored long-term in identifiable form |
+| QR campaign scan data   | 400 days                                              |
 | Purchase receipts       | 5 years (Norwegian bookkeeping law)                  |
 | Push notification token | Until you delete your account                        |
 | Inactive accounts       | Accounts inactive for 3 years are deleted            |

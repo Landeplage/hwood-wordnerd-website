@@ -6,9 +6,9 @@ description: Personvernerklæring for Wordnerd 3D.
 
 # Personvernerklæring
 
-**Sist oppdatert:** 01.06.2026
+**Sist oppdatert:** 03.09.2026
 
-Hållingwood A/S («Hållingwood», «vi», «oss») respekterer personvernet ditt og er opptatt av å beskytte personopplysningene dine. Denne erklæringen forklarer hvilke opplysninger vi samler inn når du bruker Wordnerd 3D («Spillet»), hvorfor vi samler dem inn, hvordan vi bruker dem, og hvilke rettigheter du har.
+Hållingwood A/S («Hållingwood», «vi», «oss») respekterer personvernet ditt og er opptatt av å beskytte personopplysningene dine. Denne erklæringen forklarer hvilke opplysninger vi samler inn når du bruker Wordnerd 3D («Spillet»), nettstedet vårt og nedlastingslenkene våre, hvorfor vi samler dem inn, hvordan vi bruker dem, og hvilke rettigheter du har.
 
 Vi er **behandlingsansvarlig** for behandlingen som beskrives i denne erklæringen. Vi følger EUs personvernforordning (GDPR), slik den er innlemmet i norsk rett gjennom personopplysningsloven, og gjeldende personvernlovgivning i andre land der Spillet er tilgjengelig.
 
@@ -66,6 +66,23 @@ Vi samler kun inn opplysninger vi trenger for å drive Spillet. Kategoriene nede
 
 **Vi ser, lagrer eller behandler ikke kortopplysningene dine.** All betaling håndteres av Apple eller Google etter deres egne vilkår og personvernerklæringer.
 
+### Nettsteds- og QR-kampanjeanalyse
+
+Når du følger en av de kampanjespesifikke QR-lenkene våre, registrerer vi:
+
+- Den korte kampanjekoden i lenken og tidspunktet den ble åpnet
+- En avkortet IP-adresse, som brukes til å anslå gjentatte skanninger uten å identifisere en bestemt enhet
+- Land utledet fra IP-adressen og en overordnet plattformkategori (som iOS, Android eller datamaskin)
+- Om forespørselen ser automatisert ut eller sannsynligvis er en umiddelbar gjentakelse
+
+Vi bruker ikke informasjonskapsler eller annonseidentifikatorer til denne analysen, og vi lagrer ikke hele IP-adressen eller nettleserens user-agent-streng.
+
+**Formål:** måle hvilke fysiske kampanjer som er nyttige, forbedre hvordan vi markedsfører Spillet, utarbeide samlet statistikk og beskytte tjenesten mot automatisert misbruk.
+
+**Behandlingsgrunnlag:** berettiget interesse (GDPR art. 6 nr. 1 bokstav f) — nærmere bestemt vår interesse i å forstå effekten av vår egen markedsføring ved hjelp av begrensede førstepartsdata. Vi begrenser opplysningene, bruker dem ikke til å bygge individuelle profiler og deler dem ikke med annonsenettverk.
+
+**Lagringstid:** individuelle skanningsoppføringer slettes etter 400 dager.
+
 ### Token for push-varsler
 
 - En enhetstoken utstedt av Apple Push Notification service eller Firebase Cloud Messaging på Android
@@ -107,6 +124,7 @@ Vi overfører ikke opplysningene dine til andre tredjeparter, med mindre vi er r
 | Spilldata               | Til du sletter kontoen din, deretter anonymisert     |
 | Serverlogger (tekniske) | Inntil 30 dager                                      |
 | IP-adresser             | Avkortet; lagres ikke over tid i identifiserbar form |
+| QR-kampanjedata         | 400 dager                                             |
 | Kjøpskvitteringer       | 5 år (bokføringsloven)                               |
 | Token for push-varsler  | Til du sletter kontoen din                           |
 | Inaktive kontoer        | Kontoer som er inaktive i 3 år, slettes              |
