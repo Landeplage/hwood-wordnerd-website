@@ -77,6 +77,8 @@ When you follow one of our campaign-specific QR links, we record:
 
 We do not use cookies or advertising identifiers for this analytics, and we do not retain the full IP address or browser user-agent string.
 
+If you continue to the Apple App Store, we include the short campaign code in the App Store link. Apple uses it to provide us with privacy-protected, aggregate campaign reporting, such as product-page views and downloads. Apple does not provide us with person-level App Store attribution through these links.
+
 **Purpose:** measure which physical campaigns are useful, improve how we promote the Game, produce aggregate statistics, and protect the service from automated abuse.
 
 **Legal basis:** legitimate interest (GDPR Art. 6(1)(f)) — specifically, our interest in understanding the effectiveness of our own marketing with limited, first-party data. We minimize the data, do not use it to build individual profiles, and do not share it with advertising networks.

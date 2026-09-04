@@ -24,6 +24,12 @@ File watching uses `--force_polling` to work across the Windows ↔ Linux bind m
 
 Push to `main`. GitHub Pages rebuilds automatically — no separate CI step.
 
+To enable App Store campaign attribution for QR traffic, generate a campaign
+link in App Store Connect and set its public `pt` value as
+`app_store_provider_token` in `_config.yml`. The QR service forwards its code
+as `ct`; the download page adds `pt`, `ct`, and `mt=8` to automatic and manual
+App Store links.
+
 ## Adding a page
 
 - HTML page: drop `<name>/index.html` with `layout: default` front matter.

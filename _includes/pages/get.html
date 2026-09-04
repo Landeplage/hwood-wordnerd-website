@@ -20,7 +20,7 @@ redirect can be ruled out client-side, so it must make sense on its own.
       <h1 class="get-title">{{ tg.heading | default: tg_en.heading }}</h1>
       <p class="get-blurb">{{ tg.blurb | default: tg_en.blurb }}</p>
 
-      <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+      <a class="app-store-link" data-app-store-link href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
       </a>
 
@@ -39,7 +39,7 @@ redirect can be ruled out client-side, so it must make sense on its own.
       {%- for plat in platforms %}
       <li class="get-platform get-platform--{{ plat.status }}">
         {%- if plat.status == 'available' -%}
-        <a href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer" class="get-platform-link">
+        <a href="{{ site.app_store_url_ios }}" data-app-store-link target="_blank" rel="noopener noreferrer" class="get-platform-link">
         {%- endif %}
           <i class="ti {{ plat.icon }}" aria-hidden="true"></i>
           <span class="get-platform-name">{{ plat.name }}</span>

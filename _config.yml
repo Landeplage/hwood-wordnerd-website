@@ -4,6 +4,9 @@ support_email: wordnerdsupport@hållingwood.no
 press_email: wordnerdsupport@hållingwood.no
 privacy_email: wordnerdsupport@hållingwood.no
 app_store_url_ios: https://apps.apple.com/app/id6755068519
+# Public account-level token from an App Store Connect campaign link. Once set,
+# /get/?ct=<CODE> forwards the campaign to Apple's App Store Analytics.
+app_store_provider_token: "128900764"
 # Blank until Android ships. /get/ falls back to the platform list while
 # this is empty; fill it in and Android visitors start auto-redirecting.
 play_store_url_android: ""

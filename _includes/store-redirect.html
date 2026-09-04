@@ -21,6 +21,12 @@ localized — which is what we want.
 
 site.play_store_url_android is blank until Android ships, so Android visitors
 currently fall through to the fallback card with everyone else.
+
+For QR campaigns, the ingestion service carries the normalized campaign code
+to this page as ?ct=<CODE>. When app_store_provider_token is configured, this
+include adds Apple's pt, ct, and mt parameters to both the automatic handoff
+and the manual App Store links. The provider token is public link metadata,
+not a credential.
 {%- endcomment -%}
 <script>
   (function () {
@@ -32,10 +38,31 @@ currently fall through to the fallback card with everyone else.
     var isAndroid = !isIOS && /Android/.test(ua);
     var IOS_URL = {{ site.app_store_url_ios | default: "" | jsonify }};
     var ANDROID_URL = {{ site.play_store_url_android | default: "" | jsonify }};
-    var dest = isIOS ? IOS_URL : (isAndroid ? ANDROID_URL : "");
+    var APPLE_PROVIDER_TOKEN = {{ site.app_store_provider_token | default: "" | jsonify }};
+    var campaign = new URLSearchParams(window.location.search).get("ct") || "";
+    campaign = campaign.trim().toUpperCase();
+    if (!/^[A-Z0-9][A-Z0-9-]{1,7}$/.test(campaign)) campaign = "";
+
+    var attributedIosUrl = IOS_URL;
+    if (APPLE_PROVIDER_TOKEN && campaign) {
+      try {
+        var appStoreUrl = new URL(IOS_URL);
+        appStoreUrl.searchParams.set("pt", APPLE_PROVIDER_TOKEN);
+        appStoreUrl.searchParams.set("ct", campaign);
+        appStoreUrl.searchParams.set("mt", "8");
+        attributedIosUrl = appStoreUrl.toString();
+      } catch (e) {}
+    }
+
+    var appStoreLinks = document.querySelectorAll("[data-app-store-link]");
+    for (var i = 0; i < appStoreLinks.length; i++) {
+      appStoreLinks[i].href = attributedIosUrl;
+    }
+
+    var dest = isIOS ? attributedIosUrl : (isAndroid ? ANDROID_URL : "");
     if (!dest) return;
 
-    var KEY = "wn_store_auto";
+    var KEY = "wn_store_auto" + (campaign ? "_" + campaign : "");
     try {
       if (sessionStorage.getItem(KEY)) return;
       sessionStorage.setItem(KEY, "1");

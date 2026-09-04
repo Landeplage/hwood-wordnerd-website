@@ -77,6 +77,8 @@ Når du følger en av de kampanjespesifikke QR-lenkene våre, registrerer vi:
 
 Vi bruker ikke informasjonskapsler eller annonseidentifikatorer til denne analysen, og vi lagrer ikke hele IP-adressen eller nettleserens user-agent-streng.
 
+Hvis du går videre til Apple App Store, inkluderer vi den korte kampanjekoden i App Store-lenken. Apple bruker den til å gi oss personvernbegrenset, samlet kampanjerapportering, som visninger av produktsiden og nedlastinger. Apple gir oss ikke attribusjon på personnivå gjennom disse lenkene.
+
 **Formål:** måle hvilke fysiske kampanjer som er nyttige, forbedre hvordan vi markedsfører Spillet, utarbeide samlet statistikk og beskytte tjenesten mot automatisert misbruk.
 
 **Behandlingsgrunnlag:** berettiget interesse (GDPR art. 6 nr. 1 bokstav f) — nærmere bestemt vår interesse i å forstå effekten av vår egen markedsføring ved hjelp av begrensede førstepartsdata. Vi begrenser opplysningene, bruker dem ikke til å bygge individuelle profiler og deler dem ikke med annonsenettverk.
