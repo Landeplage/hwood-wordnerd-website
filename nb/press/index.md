@@ -54,7 +54,7 @@ Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell stø
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
-    <img src="/content/img/logo-3d.png" alt="Wordnerd 3D-logo, 3D-versjon" width="949" height="517" loading="lazy">
+    <img src="/content/img/logo-3d.png" alt="Wordnerd 3D-logo, 3D-versjon" width="912" height="497" loading="lazy">
     <span class="asset-caption"><span>Logo — 3D</span>PNG · 949 × 517 px</span>
   </a>
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
