@@ -55,7 +55,7 @@ Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
-    <img src="/content/img/logo-3d.png" alt="Wordnerd 3D logo, 3D version" width="912" height="497" loading="lazy">
+    <img src="/content/img/logo-3d.png" alt="Wordnerd 3D logo, 3D version" width="2006" height="1093" loading="lazy">
     <span class="asset-caption"><span>Logo — 3D</span>PNG · 949 × 517 px</span>
   </a>
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
