@@ -71,7 +71,7 @@ Two gotchas worth knowing:
 
 1. Add the ISO 639-1 code to `languages:` in `_config.yml`, and a `defaults:` scope mapping `path: "<code>"` to `lang: <code>`.
 2. Copy `_data/i18n/en.yml` to `_data/i18n/<code>.yml` and translate. Add the new code to the `lang_names:` block in *every* language file, so each one can name it in the switcher.
-3. Create `content/img/<code>/` and add localized artwork (`app_store_badge.svg`, `og-image.png`, `screenshot01-03.png`). Leave the `images:` keys out of the YAML until the matching file exists — the English asset is served in the meantime.
+3. Create `content/img/<code>/` and add localized artwork (`app_store_badge.svg`, `og-image.png`, `screenshot_01-04.png`). Leave the `images:` keys out of the YAML until the matching file exists — the English asset is served in the meantime.
 4. Copy the page shells into `<code>/`: `index.html`, `support/index.html`, `invite/index.html`. Copy them verbatim — they're identical in every language. Jekyll only emits a page where a source file exists, so these stubs are what create the routes; `lang`, `ref` and `tkey` are all derived.
 5. Translate the long-form Markdown into `<code>/press/`, `<code>/privacy/`, `<code>/terms/`. If one isn't ready, skip the file and set `translated: [en]` on the English counterpart so it stops advertising a nonexistent alternate.
 

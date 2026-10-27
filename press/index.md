@@ -49,14 +49,14 @@ Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support
 
 ## Assets
 
-<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 12.3 MB)</a></strong></p>
+<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Download everything (ZIP, 30.8 MB)</a></strong></p>
 
 ### Logos and app icon
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
     <img src="/content/img/logo-3d.png" alt="Wordnerd 3D logo, 3D version" width="2006" height="1093" loading="lazy">
-    <span class="asset-caption"><span>Logo — 3D</span>PNG · 949 × 517 px</span>
+    <span class="asset-caption"><span>Logo — 3D</span>PNG · 2006 × 1093 px</span>
   </a>
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
     <img src="/content/img/logo-flat.png" alt="Wordnerd 3D logo, flat version" width="992" height="392" loading="lazy">
@@ -83,39 +83,85 @@ Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support
 
 ### Screenshots — English
 
-Captured on iPhone.
+Captured on iPhone and iPad.
 
 <div class="asset-grid asset-grid--shots">
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_01.png">
-    <img src="/content/img/en/screenshot_01.png" alt="Wordnerd 3D screenshot 1, English" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 1</span>English</span>
+    <img src="/content/img/en/screenshot_01.png" alt="Wordnerd 3D screenshot 1, iPhone, English" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_02.png">
-    <img src="/content/img/en/screenshot_02.png" alt="Wordnerd 3D screenshot 2, English" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 2</span>English</span>
+    <img src="/content/img/en/screenshot_02.png" alt="Wordnerd 3D screenshot 2, iPhone, English" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_03.png">
-    <img src="/content/img/en/screenshot_03.png" alt="Wordnerd 3D screenshot 3, English" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 3</span>English</span>
+    <img src="/content/img/en/screenshot_03.png" alt="Wordnerd 3D screenshot 3, iPhone, English" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>iPhone · 1320 × 2868 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_04.png">
+    <img src="/content/img/en/screenshot_04.png" alt="Wordnerd 3D screenshot 4, iPhone, English" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 4</span>iPhone · 1320 × 2868 px</span>
+  </a>
+</div>
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_01.png">
+    <img src="/content/img/en/screenshot_ipad_01.png" alt="Wordnerd 3D screenshot 1, iPad, English" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_02.png">
+    <img src="/content/img/en/screenshot_ipad_02.png" alt="Wordnerd 3D screenshot 2, iPad, English" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_03.png">
+    <img src="/content/img/en/screenshot_ipad_03.png" alt="Wordnerd 3D screenshot 3, iPad, English" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_04.png">
+    <img src="/content/img/en/screenshot_ipad_04.png" alt="Wordnerd 3D screenshot 4, iPad, English" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 4</span>iPad · 2064 × 2752 px</span>
   </a>
 </div>
 
 ### Screenshots — Norwegian
 
-Captured on iPhone.
+Captured on iPhone and iPad.
 
 <div class="asset-grid asset-grid--shots">
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_01.png">
-    <img src="/content/img/nb/screenshot_01.png" alt="Wordnerd 3D screenshot 1, Norwegian" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 1</span>Norwegian</span>
+    <img src="/content/img/nb/screenshot_01.png" alt="Wordnerd 3D screenshot 1, iPhone, Norwegian" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_02.png">
-    <img src="/content/img/nb/screenshot_02.png" alt="Wordnerd 3D screenshot 2, Norwegian" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 2</span>Norwegian</span>
+    <img src="/content/img/nb/screenshot_02.png" alt="Wordnerd 3D screenshot 2, iPhone, Norwegian" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_03.png">
-    <img src="/content/img/nb/screenshot_03.png" alt="Wordnerd 3D screenshot 3, Norwegian" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Screenshot 3</span>Norwegian</span>
+    <img src="/content/img/nb/screenshot_03.png" alt="Wordnerd 3D screenshot 3, iPhone, Norwegian" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>iPhone · 1320 × 2868 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_04.png">
+    <img src="/content/img/nb/screenshot_04.png" alt="Wordnerd 3D screenshot 4, iPhone, Norwegian" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 4</span>iPhone · 1320 × 2868 px</span>
+  </a>
+</div>
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_01.png">
+    <img src="/content/img/nb/screenshot_ipad_01.png" alt="Wordnerd 3D screenshot 1, iPad, Norwegian" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 1</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_02.png">
+    <img src="/content/img/nb/screenshot_ipad_02.png" alt="Wordnerd 3D screenshot 2, iPad, Norwegian" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 2</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_03.png">
+    <img src="/content/img/nb/screenshot_ipad_03.png" alt="Wordnerd 3D screenshot 3, iPad, Norwegian" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 3</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_04.png">
+    <img src="/content/img/nb/screenshot_ipad_04.png" alt="Wordnerd 3D screenshot 4, iPad, Norwegian" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Screenshot 4</span>iPad · 2064 × 2752 px</span>
   </a>
 </div>
 

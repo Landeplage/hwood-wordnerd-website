@@ -423,9 +423,10 @@ main > .hero:first-child {
 }
 
 /* ---------- Screenshots ---------- */
+/* Four across, or two by two: auto-fit would leave a lone fourth on a row. */
 .screenshots {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   margin: 0 auto;
 }
@@ -774,6 +775,10 @@ main > .hero:first-child {
 
   .section {
     padding: 3rem 0;
+  }
+
+  .screenshots {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

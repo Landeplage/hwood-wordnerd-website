@@ -16,7 +16,7 @@ lang_names:
 
 # Only artwork that actually exists in content/img/nb/ is listed here. Keys left
 # out fall back to the English asset, so add each one — together with its *_alt
-# text — as the file lands. Still missing: og-image.png, screenshot01-03.png.
+# text — as the file lands. Still missing: og-image.png.
 images:
   app_store_badge: /content/img/nb/app_store_badge.svg
   app_store_badge_alt: Last ned fra App Store
@@ -26,6 +26,8 @@ images:
   screenshot02_alt: Skjermbilde
   screenshot03: /content/img/nb/screenshot_03.png
   screenshot03_alt: Skjermbilde
+  screenshot04: /content/img/nb/screenshot_04.png
+  screenshot04_alt: Skjermbilde
 
 nav:
   brand_aria: Wordnerd 3D hjem

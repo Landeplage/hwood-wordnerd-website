@@ -48,14 +48,14 @@ Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell stø
 
 ## Bildemateriell
 
-<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Last ned alt (ZIP, 12,3 MB)</a></strong></p>
+<p class="press-download"><strong><a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> Last ned alt (ZIP, 30,8 MB)</a></strong></p>
 
 ### Logoer og appikon
 
 <div class="asset-grid asset-grid--logos">
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-3d.png">
     <img src="/content/img/logo-3d.png" alt="Wordnerd 3D-logo, 3D-versjon" width="2006" height="1093" loading="lazy">
-    <span class="asset-caption"><span>Logo — 3D</span>PNG · 949 × 517 px</span>
+    <span class="asset-caption"><span>Logo — 3D</span>PNG · 2006 × 1093 px</span>
   </a>
   <a class="asset-card asset-card--logo" target="_blank" rel="noopener noreferrer" href="/content/img/logo-flat.png">
     <img src="/content/img/logo-flat.png" alt="Wordnerd 3D-logo, flat versjon" width="992" height="392" loading="lazy">
@@ -82,39 +82,85 @@ Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell stø
 
 ### Skjermbilder — norsk
 
-Tatt på iPhone.
+Tatt på iPhone og iPad.
 
 <div class="asset-grid asset-grid--shots">
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_01.png">
-    <img src="/content/img/nb/screenshot_01.png" alt="Wordnerd 3D skjermbilde 1, norsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 1</span>Norsk</span>
+    <img src="/content/img/nb/screenshot_01.png" alt="Wordnerd 3D skjermbilde 1, iPhone, norsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 1</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_02.png">
-    <img src="/content/img/nb/screenshot_02.png" alt="Wordnerd 3D skjermbilde 2, norsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 2</span>Norsk</span>
+    <img src="/content/img/nb/screenshot_02.png" alt="Wordnerd 3D skjermbilde 2, iPhone, norsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 2</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_03.png">
-    <img src="/content/img/nb/screenshot_03.png" alt="Wordnerd 3D skjermbilde 3, norsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 3</span>Norsk</span>
+    <img src="/content/img/nb/screenshot_03.png" alt="Wordnerd 3D skjermbilde 3, iPhone, norsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 3</span>iPhone · 1320 × 2868 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_04.png">
+    <img src="/content/img/nb/screenshot_04.png" alt="Wordnerd 3D skjermbilde 4, iPhone, norsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 4</span>iPhone · 1320 × 2868 px</span>
+  </a>
+</div>
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_01.png">
+    <img src="/content/img/nb/screenshot_ipad_01.png" alt="Wordnerd 3D skjermbilde 1, iPad, norsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 1</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_02.png">
+    <img src="/content/img/nb/screenshot_ipad_02.png" alt="Wordnerd 3D skjermbilde 2, iPad, norsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 2</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_03.png">
+    <img src="/content/img/nb/screenshot_ipad_03.png" alt="Wordnerd 3D skjermbilde 3, iPad, norsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 3</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/nb/screenshot_ipad_04.png">
+    <img src="/content/img/nb/screenshot_ipad_04.png" alt="Wordnerd 3D skjermbilde 4, iPad, norsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 4</span>iPad · 2064 × 2752 px</span>
   </a>
 </div>
 
 ### Skjermbilder — engelsk
 
-Tatt på iPhone.
+Tatt på iPhone og iPad.
 
 <div class="asset-grid asset-grid--shots">
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_01.png">
-    <img src="/content/img/en/screenshot_01.png" alt="Wordnerd 3D skjermbilde 1, engelsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 1</span>Engelsk</span>
+    <img src="/content/img/en/screenshot_01.png" alt="Wordnerd 3D skjermbilde 1, iPhone, engelsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 1</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_02.png">
-    <img src="/content/img/en/screenshot_02.png" alt="Wordnerd 3D skjermbilde 2, engelsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 2</span>Engelsk</span>
+    <img src="/content/img/en/screenshot_02.png" alt="Wordnerd 3D skjermbilde 2, iPhone, engelsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 2</span>iPhone · 1320 × 2868 px</span>
   </a>
   <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_03.png">
-    <img src="/content/img/en/screenshot_03.png" alt="Wordnerd 3D skjermbilde 3, engelsk" width="1206" height="2622" loading="lazy">
-    <span class="asset-caption"><span>Skjermbilde 3</span>Engelsk</span>
+    <img src="/content/img/en/screenshot_03.png" alt="Wordnerd 3D skjermbilde 3, iPhone, engelsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 3</span>iPhone · 1320 × 2868 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_04.png">
+    <img src="/content/img/en/screenshot_04.png" alt="Wordnerd 3D skjermbilde 4, iPhone, engelsk" width="1320" height="2868" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 4</span>iPhone · 1320 × 2868 px</span>
+  </a>
+</div>
+
+<div class="asset-grid asset-grid--shots">
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_01.png">
+    <img src="/content/img/en/screenshot_ipad_01.png" alt="Wordnerd 3D skjermbilde 1, iPad, engelsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 1</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_02.png">
+    <img src="/content/img/en/screenshot_ipad_02.png" alt="Wordnerd 3D skjermbilde 2, iPad, engelsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 2</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_03.png">
+    <img src="/content/img/en/screenshot_ipad_03.png" alt="Wordnerd 3D skjermbilde 3, iPad, engelsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 3</span>iPad · 2064 × 2752 px</span>
+  </a>
+  <a class="asset-card" target="_blank" rel="noopener noreferrer" href="/content/img/en/screenshot_ipad_04.png">
+    <img src="/content/img/en/screenshot_ipad_04.png" alt="Wordnerd 3D skjermbilde 4, iPad, engelsk" width="2064" height="2752" loading="lazy">
+    <span class="asset-caption"><span>Skjermbilde 4</span>iPad · 2064 × 2752 px</span>
   </a>
 </div>
 
