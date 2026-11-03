@@ -145,7 +145,7 @@ Under GDPR, you have the following rights regarding your personal data:
 - **Objection** — object to processing based on legitimate interest
 - **Withdraw consent** — for any processing based on consent, withdraw it at any time
 
-You can exercise the right to erasure directly in the Game: **Settings → Account → Delete Account**.
+You can exercise the right to erasure directly in the Game: **Options → Account → Delete account**. Without the app, see [Delete your account](/delete-account/) for how to ask us, and what is deleted and kept.
 
 **Right to lodge a complaint:** if you believe we have handled your data unlawfully, you have the right to file a complaint with the Norwegian Data Protection Authority (Datatilsynet, datatilsynet.no) or with the supervisory authority in your country of residence.
 

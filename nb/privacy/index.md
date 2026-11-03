@@ -145,7 +145,7 @@ Etter GDPR har du følgende rettigheter knyttet til personopplysningene dine:
 - **Innsigelse** — protestere mot behandling basert på berettiget interesse
 - **Trekke tilbake samtykke** — når som helst trekke tilbake samtykke til behandling som bygger på samtykke
 
-Du kan bruke retten til sletting direkte i Spillet: **Innstillinger → Konto → Slett konto**.
+Du kan bruke retten til sletting direkte i Spillet: **Innstillinger → Konto → Slett konto**. Uten appen, se [Slett kontoen din](/nb/delete-account/) for hvordan du ber oss om det, og hva som slettes og beholdes.
 
 **Rett til å klage:** mener du at vi har behandlet opplysningene dine i strid med regelverket, har du rett til å klage til Datatilsynet (datatilsynet.no) eller til tilsynsmyndigheten i landet der du bor.
 
