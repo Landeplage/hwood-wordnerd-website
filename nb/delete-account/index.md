@@ -38,7 +38,9 @@ den innen 30 dager etter det.
 
 Å slette kontoen gir ikke refusjon av kjøp. Premium hører til kontoen, og opphører sammen med den.
 
-## Slett enkelte opplysninger og behold kontoen
+<div class="info-box" markdown="1">
+
+## <i class="ti ti-info-circle" aria-hidden="true"></i> Slett enkelte opplysninger og behold kontoen
 
 Du kan også be oss slette noen av opplysningene dine uten å slette kontoen. Send en e-post til
 <{{ site.privacy_email }}> med emnet «Slett opplysningene mine», og skriv hva du vil ha slettet.
@@ -56,5 +58,7 @@ Dette kan vi slette for deg:
 Spill og statistikk kan ikke slettes hver for seg, fordi de også hører til motstanderne dine. Når
 du sletter kontoen, anonymiseres de som beskrevet ovenfor. Kvitteringer for kjøp av Wordnerd
 Premium beholdes uansett i 5 år, slik bokføringsloven krever.
+
+</div>
 
 Se [personvernerklæringen](/nb/privacy/) for alle detaljer.

@@ -516,6 +516,34 @@ main > .hero:first-child {
   margin-top: 0.5em;
 }
 
+/* An aside on an inner page: extra information beside the main steps. Written as
+   <div class="info-box" markdown="1"> so its body stays Markdown. */
+.content .info-box {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+
+.content .info-box h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.content .info-box h2 i {
+  color: var(--accent);
+  flex: none;
+}
+
+.content .info-box > :last-child {
+  margin-bottom: 0;
+}
+
 .meta {
   color: var(--text-muted);
   font-size: 0.95rem;

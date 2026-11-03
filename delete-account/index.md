@@ -39,7 +39,9 @@ you play as a guest. We may ask you to confirm that the account is yours, and we
 Deleting your account doesn't refund a purchase. Premium belongs to the account, so it ends with
 it.
 
-## Delete some data and keep your account
+<div class="info-box" markdown="1">
+
+## <i class="ti ti-info-circle" aria-hidden="true"></i> Delete some data and keep your account
 
 You can also ask us to delete some of your data without deleting your account. Email us at
 <{{ site.privacy_email }}> with the subject "Delete my data", and tell us what you'd like deleted.
@@ -57,5 +59,7 @@ We can delete:
 Games and stats can't be deleted on their own, because they also belong to your opponents. When
 you delete your account, they're anonymized as described above. Purchase receipts for Wordnerd
 Premium are kept for 5 years either way, as Norwegian bookkeeping law requires.
+
+</div>
 
 See the [Privacy Policy](/privacy/) for the full details.
