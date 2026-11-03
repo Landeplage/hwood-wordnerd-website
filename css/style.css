@@ -657,14 +657,6 @@ main > .hero:first-child {
   font-size: 0.9rem;
 }
 
-.press-browse {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 1.1rem;
-  font-size: 0.95rem;
-}
-
 .press-masthead-art {
   display: flex;
   justify-content: center;

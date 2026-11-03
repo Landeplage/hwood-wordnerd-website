@@ -13,7 +13,6 @@ layout: default
         <a class="press-primary" href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> {{ p.download }}</a>
         <span class="press-file-size">ZIP · {{ p.zip_size }}</span>
       </div>
-      <a class="press-browse" href="#assets">{{ p.browse }} <i class="ti ti-arrow-down" aria-hidden="true"></i></a>
     </div>
     <div class="press-masthead-art">
       <img src="/content/img/hero_phone.png" alt="{{ t.home.hero_phone_alt | default: t_en.home.hero_phone_alt }}" width="978" height="1602">
@@ -41,9 +40,9 @@ layout: default
     <nav class="press-section-nav" aria-label="{{ p.on_this_page }}">
       <h2>{{ p.on_this_page }}</h2>
       <a href="#description">{{ p.about }}</a>
+      <a href="#development">{{ p.development }}</a>
       <a href="#assets">{{ p.assets }}</a>
       <a href="#screenshots">{{ p.screenshots }}</a>
-      <a href="#development">{{ p.development }}</a>
     </nav>
   </aside>
   <div class="press-main content">
