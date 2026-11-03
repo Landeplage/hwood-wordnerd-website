@@ -45,7 +45,7 @@ The game ends when the tile bag is empty and a player has played their last tile
 > **David Skaufjord** ([Hållingwood](https://www.hållingwood.no/)) → Concept, design, and project management  
 > **Martin Lande** ([Lande Audio](https://landeaudio.com/)) → Programming, design, graphics, and audio
 
-Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support from [Midtnorsk Filmsenter](https://midtnorskfilm.no/).
+Wordnerd 3D is made in [Godot](https://godotengine.org/), with financial support from [Midtnorsk Filmsenter](https://midtnorskfilm.no/) and [Filminvest](https://filminvest.no/).
 
 ## Assets
 

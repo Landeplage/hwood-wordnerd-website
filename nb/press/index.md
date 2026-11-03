@@ -44,7 +44,7 @@ Partiet er over når brikkeposen er tom og en av spillerne har lagt ut sin siste
 > **David Skaufjord** ([Hållingwood](https://www.hållingwood.no/)) → Idé, design og prosjektledelse  
 > **Martin Lande** ([Lande Audio](https://landeaudio.com/)) → Programmering, design, grafikk og lyd
 
-Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell støtte fra [Midtnorsk Filmsenter](https://midtnorskfilm.no/).
+Wordnerd 3D er utviklet i [Godot](https://godotengine.org/), med finansiell støtte fra [Midtnorsk Filmsenter](https://midtnorskfilm.no/) og [Filminvest](https://filminvest.no/).
 
 ## Bildemateriell
 
