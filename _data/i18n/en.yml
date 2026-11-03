@@ -83,6 +83,43 @@ home:
   about_body: Wordnerd 3D is built by [studio], a small studio that wanted to find out what would happen if you took a classic word game mechanic and added a third dimension. Turns out; a lot of fun!
   about_studio_name: Hållingwood
 
+press:
+  heading: Press kit
+  intro: Media assets and information for journalists, content creators, and partners covering Wordnerd 3D.
+  download: Download press kit
+  zip_size: 30.8 MB
+  browse: Browse individual assets
+  facts_heading: Fact sheet
+  title_label: Title
+  developer_label: Developer
+  platforms_label: Platforms
+  platforms: iOS (iPhone and iPad), Android planned
+  release_label: Release date
+  release: "2026"
+  price_label: Price
+  price: Free, with optional ad-free premium
+  download_label: Play the game
+  contact: Press contact
+  on_this_page: On this page
+  about: About the game
+  assets: Assets
+  development: Development
+  download_all: Download everything
+  assets_note: Open any preview for the original, full-resolution PNG.
+  logos: Logos and app icon
+  logo_3d: Logo — 3D
+  logo_flat: Logo — flat
+  app_icon: App icon
+  art_landscape: Key art — landscape
+  art_portrait: Key art — portrait
+  screenshots: Screenshots
+  screenshots_note: Captured on iPhone and iPad. Choose a language and device to browse the originals.
+  language: Language
+  device: Device
+  english: English
+  norwegian: Norwegian
+  screenshot: Screenshot
+
 support:
   title: Support | Wordnerd 3D
   description: Support and FAQ for Wordnerd 3D.

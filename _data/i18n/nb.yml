@@ -80,6 +80,43 @@ home:
   about_body: Wordnerd 3D er laget av [studio], et lite studio som ville finne ut hva som skjer om du tar en klassisk ordspillmekanikk og legger til en tredje dimensjon. Svaret er mye moro!
   about_studio_name: Hållingwood
 
+press:
+  heading: Pressemateriell
+  intro: Medieressurser og informasjon for journalister, innholdsskapere og samarbeidspartnere som omtaler Wordnerd 3D.
+  download: Last ned pressepakken
+  zip_size: 30,8 MB
+  browse: Se bildemateriell
+  facts_heading: Fakta
+  title_label: Tittel
+  developer_label: Utvikler
+  platforms_label: Plattformer
+  platforms: iOS (iPhone og iPad), Android-versjon kommer snart
+  release_label: Lanseringsdato
+  release: 14. juni 2026
+  price_label: Pris
+  price: Gratis, kan kjøpe Premium
+  download_label: Spill spillet
+  contact: Pressekontakt
+  on_this_page: På denne siden
+  about: Om spillet
+  assets: Bildemateriell
+  development: Utvikling
+  download_all: Last ned alt
+  assets_note: Åpne en forhåndsvisning for å se originalen som PNG i full oppløsning.
+  logos: Logoer og appikon
+  logo_3d: Logo — 3D
+  logo_flat: Logo — flat
+  app_icon: Appikon
+  art_landscape: Key art — liggende
+  art_portrait: Key art — stående
+  screenshots: Skjermbilder
+  screenshots_note: Tatt på iPhone og iPad. Velg språk og enhet for å se originalene.
+  language: Språk
+  device: Enhet
+  english: Engelsk
+  norwegian: Norsk
+  screenshot: Skjermbilde
+
 support:
   title: Brukerstøtte | Wordnerd 3D
   description: Brukerstøtte og ofte stilte spørsmål om Wordnerd 3D.

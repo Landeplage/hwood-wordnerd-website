@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% include i18n.html %}
+{% assign p = t.press | default: t_en.press %}
+<section class="hero press-masthead" aria-labelledby="press-title">
+  <div class="container press-container press-masthead-grid">
+    <div class="press-intro">
+      <span class="eyebrow">Wordnerd 3D</span>
+      <h1 id="press-title">{{ p.heading }}</h1>
+      <p>{{ p.intro }}</p>
+      <div class="press-hero-actions">
+        <a class="press-primary" href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> {{ p.download }}</a>
+        <span class="press-file-size">ZIP · {{ p.zip_size }}</span>
+      </div>
+      <a class="press-browse" href="#assets">{{ p.browse }} <i class="ti ti-arrow-down" aria-hidden="true"></i></a>
+    </div>
+    <div class="press-masthead-art">
+      <img src="/content/img/hero_phone.png" alt="{{ t.home.hero_phone_alt | default: t_en.home.hero_phone_alt }}" width="978" height="1602">
+    </div>
+  </div>
+</section>
+
+<div class="container press-container press-layout">
+  <aside class="press-sidebar" aria-labelledby="fact-sheet">
+    <div class="press-facts">
+      <h2 id="fact-sheet">{{ p.facts_heading }}</h2>
+      <dl>
+        <dt>{{ p.title_label }}</dt><dd>Wordnerd 3D</dd>
+        <dt>{{ p.developer_label }}</dt><dd><a href="https://www.hållingwood.no/">Hållingwood A/S</a></dd>
+        <dt>{{ p.platforms_label }}</dt><dd>{{ p.platforms }}</dd>
+        <dt>{{ p.release_label }}</dt><dd>{{ p.release }}</dd>
+        <dt>{{ p.price_label }}</dt><dd>{{ p.price }}</dd>
+        <dt>{{ p.download_label }}</dt><dd><a href="{{ site.app_store_url_ios }}">App Store <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a></dd>
+      </dl>
+    </div>
+    <div class="press-contact">
+      <h2>{{ p.contact }}</h2>
+      <a href="mailto:{{ site.press_email }}">{{ site.press_email }}</a>
+    </div>
+    <nav class="press-section-nav" aria-label="{{ p.on_this_page }}">
+      <h2>{{ p.on_this_page }}</h2>
+      <a href="#description">{{ p.about }}</a>
+      <a href="#assets">{{ p.assets }}</a>
+      <a href="#screenshots">{{ p.screenshots }}</a>
+      <a href="#development">{{ p.development }}</a>
+    </nav>
+  </aside>
+  <div class="press-main content">
+    {{ content }}
+    {% include press-assets.html %}
+  </div>
+</div>
+<script src="/js/press.js" defer></script>

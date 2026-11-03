@@ -1,0 +1,78 @@
+<section class="press-assets" aria-labelledby="assets">
+  <div class="press-section-heading">
+    <h2 id="assets">{{ p.assets }}</h2>
+    <a href="/content/press/wordnerd3d-press-kit.zip"><i class="ti ti-download" aria-hidden="true"></i> {{ p.download_all }}</a>
+  </div>
+  <p class="press-section-note">{{ p.assets_note }}</p>
+  <h3>{{ p.logos }}</h3>
+  <div class="asset-grid asset-grid--logos">
+    <a class="asset-card asset-card--logo" href="/content/img/logo-3d.png" target="_blank" rel="noopener noreferrer">
+      <img src="/content/img/logo-3d.png" alt="{{ p.logo_3d }}" width="2006" height="1093" loading="lazy">
+      <span class="asset-caption"><span>{{ p.logo_3d }}</span>PNG · 2006 × 1093 px</span>
+    </a>
+    <a class="asset-card asset-card--logo" href="/content/img/logo-flat.png" target="_blank" rel="noopener noreferrer">
+      <img src="/content/img/logo-flat.png" alt="{{ p.logo_flat }}" width="992" height="392" loading="lazy">
+      <span class="asset-caption"><span>{{ p.logo_flat }}</span>PNG · 992 × 392 px</span>
+    </a>
+    <a class="asset-card asset-card--logo" href="/content/img/app_icon.png" target="_blank" rel="noopener noreferrer">
+      <img src="/content/img/app_icon.png" alt="{{ p.app_icon }}" width="1024" height="1024" loading="lazy">
+      <span class="asset-caption"><span>{{ p.app_icon }}</span>PNG · 1024 × 1024 px</span>
+    </a>
+  </div>
+  <h3>Key art</h3>
+  <div class="asset-grid asset-grid--art">
+    <a class="asset-card" href="/content/press/key_art_01.png" target="_blank" rel="noopener noreferrer">
+      <img src="/content/press/key_art_01.png" alt="{{ p.art_landscape }}" width="1600" height="840" loading="lazy">
+      <span class="asset-caption"><span>{{ p.art_landscape }}</span>PNG · 1600 × 840 px</span>
+    </a>
+    <a class="asset-card" href="/content/press/key_art_02.png" target="_blank" rel="noopener noreferrer">
+      <img src="/content/press/key_art_02.png" alt="{{ p.art_portrait }}" width="900" height="1200" loading="lazy">
+      <span class="asset-caption"><span>{{ p.art_portrait }}</span>PNG · 900 × 1200 px</span>
+    </a>
+  </div>
+</section>
+
+<section class="press-gallery" aria-labelledby="screenshots" data-default-language="{{ lang }}">
+  <h2 id="screenshots">{{ p.screenshots }}</h2>
+  <p class="press-section-note">{{ p.screenshots_note }}</p>
+  <!-- Without JavaScript, every group remains visible with its own heading. -->
+  <div class="press-filters" hidden>
+    <label for="screenshot-language">{{ p.language }}
+      <select id="screenshot-language" name="screenshot-language">
+        <option value="en"{% if lang == 'en' %} selected{% endif %}>{{ p.english }}</option>
+        <option value="nb"{% if lang == 'nb' %} selected{% endif %}>{{ p.norwegian }}</option>
+      </select>
+    </label>
+    <label for="screenshot-device">{{ p.device }}
+      <select id="screenshot-device" name="screenshot-device">
+        <option value="iphone">iPhone</option>
+        <option value="ipad">iPad</option>
+      </select>
+    </label>
+  </div>
+  <div class="press-gallery-status" role="status" aria-live="polite" aria-atomic="true"></div>
+  {% assign screenshot_languages = 'en,nb' | split: ',' %}
+  {% assign screenshot_devices = 'iphone,ipad' | split: ',' %}
+  {% for screenshot_language in screenshot_languages %}
+    {% if screenshot_language == 'en' %}{% assign language_name = p.english %}{% else %}{% assign language_name = p.norwegian %}{% endif %}
+    {% for device in screenshot_devices %}
+      {% if device == 'ipad' %}
+        {% assign device_name = 'iPad' %}{% assign file_prefix = 'screenshot_ipad_' %}{% assign image_width = 2064 %}{% assign image_height = 2752 %}
+      {% else %}
+        {% assign device_name = 'iPhone' %}{% assign file_prefix = 'screenshot_' %}{% assign image_width = 1320 %}{% assign image_height = 2868 %}
+      {% endif %}
+      <div class="press-screenshot-group" data-language="{{ screenshot_language }}" data-device="{{ device }}">
+        <h3>{{ language_name }} · {{ device_name }}</h3>
+        <div class="asset-grid asset-grid--shots">
+          {% for number in (1..4) %}
+            {% capture image_path %}/content/img/{{ screenshot_language }}/{{ file_prefix }}0{{ number }}.png{% endcapture %}
+            <a class="asset-card" href="{{ image_path }}" target="_blank" rel="noopener noreferrer">
+              <img src="{{ image_path }}" alt="Wordnerd 3D — {{ p.screenshot }} {{ number }}, {{ device_name }}, {{ language_name }}" width="{{ image_width }}" height="{{ image_height }}" loading="lazy">
+              <span class="asset-caption"><span>{{ p.screenshot }} {{ number }}</span>{{ image_width }} × {{ image_height }} px · PNG</span>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  {% endfor %}
+</section>
