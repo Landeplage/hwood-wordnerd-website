@@ -31,10 +31,30 @@ den innen 30 dager etter det.
   på alle enheter.
 - **Anonymiseres:** brukernavnet ditt erstattes med et navn som ikke kan spores tilbake til deg.
   Spill du har spilt, og chatmeldingene i dem, blir værende i motstandernes spillhistorikk under
-  dette navnet.
+  dette navnet. Innloggingshistorikken din (enheter, appversjoner og land) beholdes uten kobling
+  til deg.
 - **Beholdes:** kvitteringer for kjøp av Wordnerd Premium, i 5 år, slik bokføringsloven krever.
   Serverlogger lagres i inntil 30 dager og slettes deretter.
 
 Å slette kontoen gir ikke refusjon av kjøp. Premium hører til kontoen, og opphører sammen med den.
+
+## Slett enkelte opplysninger og behold kontoen
+
+Du kan også be oss slette noen av opplysningene dine uten å slette kontoen. Send en e-post til
+<{{ site.privacy_email }}> med emnet «Slett opplysningene mine», og skriv hva du vil ha slettet.
+Send den fra e-postadressen som er knyttet til kontoen, eller oppgi brukernavnet ditt hvis du
+spiller som gjest. Vi kan be deg bekrefte at kontoen er din, og sletter opplysningene innen
+30 dager etter det.
+
+Dette kan vi slette for deg:
+
+- profilbildet ditt
+- chatmeldinger du har sendt
+- innloggingshistorikken din: hvilke enheter, operativsystemer og appversjoner du har brukt, og
+  hvilket land du logget inn fra
+
+Spill og statistikk kan ikke slettes hver for seg, fordi de også hører til motstanderne dine. Når
+du sletter kontoen, anonymiseres de som beskrevet ovenfor. Kvitteringer for kjøp av Wordnerd
+Premium beholdes uansett i 5 år, slik bokføringsloven krever.
 
 Se [personvernerklæringen](/nb/privacy/) for alle detaljer.
