@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.hallingwood.wordnerd",
+      "sha256_cert_fingerprints": [
+        "01:69:AA:84:EB:D9:1F:65:9B:F5:D8:0C:29:55:2F:23:84:79:0E:CD:9F:E3:36:B3:30:E7:5F:FD:5B:63:AD:7E"
+      ]
+    }
+  }
+]

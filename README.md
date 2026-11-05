@@ -75,4 +75,8 @@ Two gotchas worth knowing:
 4. Copy the page shells into `<code>/`: `index.html`, `support/index.html`, `invite/index.html`. Copy them verbatim — they're identical in every language. Jekyll only emits a page where a source file exists, so these stubs are what create the routes; `lang`, `ref` and `tkey` are all derived.
 5. Translate the long-form Markdown into `<code>/press/`, `<code>/privacy/`, `<code>/terms/`. If one isn't ready, skip the file and set `translated: [en]` on the English counterpart so it stops advertising a nonexistent alternate.
 
-`.well-known/apple-app-site-association` needs **no** change — its `/*/invite*` patterns already cover every language prefix.
+`.well-known/apple-app-site-association` needs **no** change — its `/*/invite*` patterns already cover every language prefix. Android matches paths in the app instead: add a `Deeplink` node for `/<code>/invite` to the client's `autoloads/deeplink/deeplink.tscn`.
+
+### App Links (Android)
+
+`.well-known/assetlinks.json` lets the Android app open invite links. It names the package and the SHA-256 of Google's **app signing key** (Play Console > Test and release > App integrity), which is what signs the builds players install from Play. A build signed with any other key (a sandbox APK with a debug key) opens invite links in the browser; add its fingerprint here only for testing. Check with Google's tester: `https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://wordnerd3d.com&relation=delegate_permission/common.handle_all_urls`.
