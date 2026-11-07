@@ -6,7 +6,7 @@ description: Privacy policy for Wordnerd 3D.
 
 # Privacy Policy
 
-**Last updated:** 03.09.2026
+**Last updated:** 07.11.2026
 
 Hållingwood A/S ("Hållingwood", "we", "us") respects your privacy and is committed to protecting your personal data. This policy explains what data we collect when you use Wordnerd 3D (the "Game"), our website, and our download links; why we collect it; how we use it; and what rights you have.
 
@@ -31,6 +31,7 @@ We only collect data we need to operate the Game. The categories below describe 
 - Username (chosen by you; visible to other players)
 - Password (stored as a salted hash; we never see your actual password)
 - Email address (optional; used only for account recovery and important service notices)
+- If you sign in with Apple or Google: an identifier for your account with that service, and the email address it shares with us (with Apple, this can be a private relay address). We use these to sign you in and to find an existing Wordnerd account with the same address. We never receive your password for that service, and we do not store your name or profile photo from it.
 
 **Purpose:** create and manage your account, let you log in across devices, recover access if you forget your password.  
 **Legal basis:** performance of a contract (GDPR Art. 6(1)(b)).  
@@ -107,12 +108,12 @@ To be explicit:
 
 We use the following service providers ("data processors") to operate the Game. Each is bound by a data processing agreement.
 
-| Provider        | Purpose                                                | Location                |
-| --------------- | ------------------------------------------------------ | ----------------------- |
-| Linode (Akamai) | Server hosting                                         | Germany (EEA)           |
-| Apple Inc.      | App distribution, in-app purchases, push notifications | United States / Ireland |
-| Google LLC      | Android distribution, AdMob ads, push notifications    | United States / Ireland |
-| Lettermint      | E-mail distribution                                    | Europe                  |
+| Provider        | Purpose                                                                     | Location                |
+| --------------- | --------------------------------------------------------------------------- | ----------------------- |
+| Linode (Akamai) | Server hosting                                                              | Germany (EEA)           |
+| Apple Inc.      | App distribution, in-app purchases, push notifications, sign-in             | United States / Ireland |
+| Google LLC      | Android distribution, in-app purchases, AdMob ads, push notifications, sign-in | United States / Ireland |
+| Lettermint      | E-mail distribution                                                         | Europe                  |
 
 **International transfers:** Services provided by Apple and Google involve transfers to the United States. These transfers are made under the EU-US Data Privacy Framework and/or Standard Contractual Clauses approved by the European Commission.
 

@@ -6,7 +6,7 @@ description: Personvernerklæring for Wordnerd 3D.
 
 # Personvernerklæring
 
-**Sist oppdatert:** 03.09.2026
+**Sist oppdatert:** 07.11.2026
 
 Hållingwood A/S («Hållingwood», «vi», «oss») respekterer personvernet ditt og er opptatt av å beskytte personopplysningene dine. Denne erklæringen forklarer hvilke opplysninger vi samler inn når du bruker Wordnerd 3D («Spillet»), nettstedet vårt og nedlastingslenkene våre, hvorfor vi samler dem inn, hvordan vi bruker dem, og hvilke rettigheter du har.
 
@@ -31,6 +31,7 @@ Vi samler kun inn opplysninger vi trenger for å drive Spillet. Kategoriene nede
 - Brukernavn (valgt av deg; synlig for andre spillere)
 - Passord (lagret i kryptert form; vi har ikke tilgang til det faktiske passordet ditt)
 - E-postadresse (valgfritt; brukes kun til gjenoppretting av konto og viktige driftsmeldinger)
+- Hvis du logger inn med Apple eller Google: en identifikator for kontoen din hos den tjenesten, og e-postadressen den deler med oss (hos Apple kan dette være en privat videresendingsadresse). Vi bruker disse til å logge deg inn og til å finne en eksisterende Wordnerd-konto med samme adresse. Vi får aldri passordet ditt til den tjenesten, og vi lagrer ikke navnet eller profilbildet ditt derfra.
 
 **Formål:** opprette og administrere kontoen din, la deg logge inn på tvers av enheter, og gjenopprette tilgangen hvis du glemmer passordet.  
 **Behandlingsgrunnlag:** oppfyllelse av avtale (GDPR art. 6 nr. 1 bokstav b).  
@@ -110,8 +111,8 @@ Vi bruker følgende leverandører («databehandlere») for å drive Spillet. Hve
 | Leverandør      | Formål                                            | Lokasjon       |
 | --------------- | ------------------------------------------------- | -------------- |
 | Linode (Akamai) | Serverdrift                                       | Tyskland (EØS) |
-| Apple Inc.      | Appdistribusjon, kjøp i app, push-varsler         | USA / Irland   |
-| Google LLC      | Android-distribusjon, AdMob-reklame, push-varsler | USA / Irland   |
+| Apple Inc.      | Appdistribusjon, kjøp i app, push-varsler, innlogging | USA / Irland   |
+| Google LLC      | Android-distribusjon, kjøp i app, AdMob-reklame, push-varsler, innlogging | USA / Irland   |
 | Lettermint      | E-postutsendelse                                  | Europa         |
 
 **Overføring til tredjeland:** Tjenester levert av Apple og Google innebærer overføring til USA. Disse overføringene skjer under EU-US Data Privacy Framework og/eller standard personvernbestemmelser godkjent av Europakommisjonen.

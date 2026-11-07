@@ -26,7 +26,7 @@ den innen 30 dager etter det.
 
 ## Hva som slettes, og hva som beholdes
 
-- **Slettes:** innloggingsopplysningene dine (e-postadresse, passord, Logg inn med Apple),
+- **Slettes:** innloggingsopplysningene dine (e-postadresse, passord, Logg inn med Apple eller Google),
   profilbilde, venner og blokkerte spillere, varsler og tokener for push-varsler. Du blir logget ut
   på alle enheter.
 - **Anonymiseres:** brukernavnet ditt erstattes med et navn som ikke kan spores tilbake til deg.

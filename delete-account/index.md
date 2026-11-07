@@ -26,7 +26,7 @@ you play as a guest. We may ask you to confirm that the account is yours, and we
 
 ## What is deleted, and what is kept
 
-- **Deleted:** your sign-in details (email address, password, Sign in with Apple), avatar,
+- **Deleted:** your sign-in details (email address, password, Sign in with Apple or Google), avatar,
   friends and blocked players, notifications and push notification tokens. You're signed out on
   every device.
 - **Anonymized:** your username is replaced with a placeholder that can't be traced back to you.
