@@ -22,6 +22,8 @@ lang_names:
 images:
   app_store_badge: /content/img/en/app_store_badge.svg
   app_store_badge_alt: Download on the App Store
+  play_store_badge: /content/img/en/play_store_badge.png
+  play_store_badge_alt: Get it on Google Play
   og_image: /content/img/en/og-image.png
   screenshot01: /content/img/en/screenshot_01.png
   screenshot01_alt: Screenshot
@@ -53,7 +55,7 @@ footer:
 
 home:
   title: Wordnerd 3D | The word game with depth
-  description: Wordnerd 3D — a word puzzle game by Hållingwood A/S. Available on the App Store.
+  description: Wordnerd 3D — a word puzzle game by Hållingwood A/S. Available on the App Store and Google Play.
   hero_title: Wordnerd 3D
   hero_lead: The word game where you build words in three dimensions. Stack, spell and score with friends!
   hero_phone_alt: Wordnerd 3D on a phone
@@ -92,12 +94,14 @@ press:
   title_label: Title
   developer_label: Developer
   platforms_label: Platforms
-  platforms: iOS (iPhone and iPad), Android planned
+  platforms: iOS (iPhone and iPad) and Android
   release_label: Release date
   release: "2026"
   price_label: Price
   price: Free, with optional ad-free premium
   download_label: Play the game
+  app_store: App Store
+  google_play: Google Play
   contact: Press contact
   on_this_page: On this page
   about: About the game
@@ -129,7 +133,7 @@ support:
   faq:
     - icon: ti-device-mobile
       q: Which devices does Wordnerd 3D support?
-      a: iOS devices (iPhone and iPad) running iOS 16 or later. Android support is planned for a future update.
+      a: iPhone and iPad running iOS 16 or later, and Android phones and tablets running Android 7.0 or later.
     - icon: ti-restore
       q: How do I restore my purchases?
       a: Go to the settings menu in the app and tap "Restore Purchases." Make sure you are signed in with the same account used to make the original purchase.
@@ -169,22 +173,22 @@ invite:
 # glimpse this for an instant; everyone else reads it as the actual page.
 get:
   title: Get Wordnerd 3D
-  description: Download Wordnerd 3D — available now on the App Store, with Android and web coming soon.
+  description: Download Wordnerd 3D — available now on the App Store and Google Play, with web coming soon.
   eyebrow: Get the app
   heading: Wordnerd 3D
   blurb: "A word game like no other: build words in three dimensions, in all six directions, and outsmart your friends."
-  # Shown only to Android visitors, detected client-side. Relevant only while
-  # Google Play isn't yet a redirect target; drop it once Android ships.
-  android_note: Wordnerd 3D for Android is on its way. In the meantime, grab it on iOS or check back soon.
   platforms:
+    # store picks the link for an available platform: ios or android.
     - name: App Store
       icon: ti-brand-apple
       status: available
       status_label: Available now
+      store: ios
     - name: Google Play
       icon: ti-brand-google-play
-      status: soon
-      status_label: Coming soon
+      status: available
+      status_label: Available now
+      store: android
     - name: Web
       icon: ti-world
       status: soon

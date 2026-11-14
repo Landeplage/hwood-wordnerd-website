@@ -30,7 +30,7 @@ layout: default
         <dt>{{ p.platforms_label }}</dt><dd>{{ p.platforms }}</dd>
         <dt>{{ p.release_label }}</dt><dd>{{ p.release }}</dd>
         <dt>{{ p.price_label }}</dt><dd>{{ p.price }}</dd>
-        <dt>{{ p.download_label }}</dt><dd><a href="{{ site.app_store_url_ios }}">App Store <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a></dd>
+        <dt>{{ p.download_label }}</dt><dd><a href="{{ site.app_store_url_ios }}">{{ p.app_store }} <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a><br><a href="{{ site.play_store_url_android }}">{{ p.google_play }} <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a></dd>
       </dl>
     </div>
     <div class="press-contact">

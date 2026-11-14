@@ -20,6 +20,8 @@ lang_names:
 images:
   app_store_badge: /content/img/nb/app_store_badge.svg
   app_store_badge_alt: Last ned fra App Store
+  play_store_badge: /content/img/nb/play_store_badge.png
+  play_store_badge_alt: Last ned på Google Play
   screenshot01: /content/img/nb/screenshot_01.png
   screenshot01_alt: Skjermbilde
   screenshot02: /content/img/nb/screenshot_02.png
@@ -50,7 +52,7 @@ footer:
 
 home:
   title: Wordnerd 3D | Ordspillet med dybde
-  description: Wordnerd 3D — et ordspill fra Hållingwood A/S. Tilgjengelig i App Store.
+  description: Wordnerd 3D — et ordspill fra Hållingwood A/S. Tilgjengelig i App Store og Google Play.
   hero_title: Wordnerd 3D
   hero_lead: Ordspillet der du legger ord i tre dimensjoner. Spill med venner og familie!
   hero_phone_alt: Wordnerd 3D på en mobil
@@ -89,12 +91,14 @@ press:
   title_label: Tittel
   developer_label: Utvikler
   platforms_label: Plattformer
-  platforms: iOS (iPhone og iPad), Android-versjon kommer snart
+  platforms: iOS (iPhone og iPad) og Android
   release_label: Lanseringsdato
   release: 14. juni 2026
   price_label: Pris
   price: Gratis, kan kjøpe Premium
   download_label: Spill spillet
+  app_store: App Store
+  google_play: Google Play
   contact: Pressekontakt
   on_this_page: På denne siden
   about: Om spillet
@@ -126,7 +130,7 @@ support:
   faq:
     - icon: ti-device-mobile
       q: Hvilke enheter støtter Wordnerd 3D?
-      a: iOS-enheter (iPhone og iPad) med iOS 16 eller nyere. Støtte for Android er planlagt i en senere oppdatering.
+      a: iPhone og iPad med iOS 16 eller nyere, og Android-telefoner og -nettbrett med Android 7.0 eller nyere.
     - icon: ti-restore
       q: Hvordan gjenoppretter jeg kjøpene mine?
       a: Gå til innstillingene i appen og trykk «Gjenopprett kjøp». Pass på at du er logget inn med samme konto som ble brukt til det opprinnelige kjøpet.
@@ -163,20 +167,21 @@ invite:
 
 get:
   title: Last ned Wordnerd 3D
-  description: Last ned Wordnerd 3D — tilgjengelig nå i App Store, med Android og nettversjon på vei.
+  description: Last ned Wordnerd 3D — tilgjengelig nå i App Store og Google Play, med nettversjon på vei.
   eyebrow: Last ned appen
   heading: Wordnerd 3D
   blurb: "Et ordspill ulikt alle andre: Bygg ord i tre dimensjoner, i alle seks retninger, og overlist vennene dine."
-  android_note: Wordnerd 3D for Android er på vei. I mellomtiden kan du spille på iOS, eller sjekke tilbake senere.
   platforms:
     - name: App Store
       icon: ti-brand-apple
       status: available
       status_label: Tilgjengelig nå
+      store: ios
     - name: Google Play
       icon: ti-brand-google-play
-      status: soon
-      status_label: Kommer snart
+      status: available
+      status_label: Tilgjengelig nå
+      store: android
     - name: Web
       icon: ti-world
       status: soon

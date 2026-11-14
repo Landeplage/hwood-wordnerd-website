@@ -58,7 +58,7 @@ We only collect data we need to operate the Game. The categories below describe 
 
 ### Purchase data (Wordnerd Premium)
 
-- Purchase receipt from Apple App Store (or Google Play, when available)
+- Purchase receipt from Apple App Store or Google Play
 - Premium entitlement status, tied to your account
 
 **Purpose:** verify your purchase and grant Premium features (such as ad removal) across your devices.  

@@ -12,15 +12,12 @@ fallback card paint first means that card is what's waiting behind the sheet.
 The sessionStorage guard makes the auto-launch a once-per-tab event. Without
 it, coming back from a dismissed store sheet re-triggers the handoff and the
 visitor is yanked straight back into the store, unable to reach the page.
-Once it has fired, the App Store badge on the card is the way back in.
+Once it has fired, the store badges on the card are the way back in.
 
 Because this no longer pre-empts lang-detect.html in <head>, a visitor whose
 browser prefers another language is routed to their translated copy first
 (pre-paint, so it's invisible) and the fallback behind the store sheet is
 localized — which is what we want.
-
-site.play_store_url_android is blank until Android ships, so Android visitors
-currently fall through to the fallback card with everyone else.
 
 For QR campaigns, the ingestion service carries the normalized campaign code
 to this page as ?ct=<CODE>. When app_store_provider_token is configured, this

@@ -1,0 +1,15 @@
+{%- comment -%}
+The App Store and Google Play badges, side by side, localized per language.
+Include i18n.html before this one.
+
+data-app-store-link lets store-redirect.html add Apple campaign parameters
+on pages that opt into it; elsewhere it does nothing.
+{%- endcomment -%}
+<div class="store-badges">
+  <a class="app-store-link" data-app-store-link href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
+  </a>
+  <a class="app-store-link" href="{{ site.play_store_url_android }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ t.images.play_store_badge | default: t_en.images.play_store_badge }}" alt="{{ t.images.play_store_badge_alt | default: t_en.images.play_store_badge_alt }}" />
+  </a>
+</div>

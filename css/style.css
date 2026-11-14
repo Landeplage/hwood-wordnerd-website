@@ -332,6 +332,19 @@ main > .hero:first-child {
   display: block;
 }
 
+/* The App Store and Google Play badges at one shared height, wrapping onto a
+   second row when the column is too narrow for both. */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.get-card .store-badges {
+  justify-content: center;
+}
+
 .hero-art {
   display: flex;
   justify-content: center;
@@ -1115,8 +1128,8 @@ main > .hero:first-child {
     margin-right: auto;
   }
 
-  .app-store-link {
-    margin: 0 auto;
+  .hero-content .store-badges {
+    justify-content: center;
   }
 
   .hero-phone {
@@ -1519,9 +1532,14 @@ main > .invite-stage:first-child {
     margin-right: auto;
   }
 
+  .invite-card .store-badges,
   .invite-free,
   .invite-hint {
     justify-content: center;
+  }
+
+  .invite-free,
+  .invite-hint {
     text-align: left;
   }
 
@@ -1604,29 +1622,6 @@ main > .invite-stage:first-child {
   color: var(--text-muted);
   max-width: 34em;
   margin: 0 auto 1.75rem;
-}
-
-.get-android-note {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  text-align: left;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin: 1.5rem 0 0;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border);
-}
-
-.get-android-note[hidden] {
-  display: none;
-}
-
-.get-android-note i {
-  font-size: 1.1em;
-  color: var(--accent);
-  flex: none;
-  margin-top: 0.2em;
 }
 
 /* Flex rather than grid: with three tiles and room for two, grid leaves the

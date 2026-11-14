@@ -44,9 +44,7 @@
           {{ ti.blurb | default: ti_en.blurb }}
         </p>
 
-        <a class="app-store-link" href="{{ site.app_store_url_ios }}" target="_blank" rel="noopener noreferrer">
-          <img src="{{ t.images.app_store_badge | default: t_en.images.app_store_badge }}" alt="{{ t.images.app_store_badge_alt | default: t_en.images.app_store_badge_alt }}" />
-        </a>
+        {% include store-badges.html %}
 
         <p class="invite-free">
           <i class="ti ti-download" aria-hidden="true"></i>
